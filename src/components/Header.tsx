@@ -1,33 +1,52 @@
 // components/Header.tsx
 'use client';
 import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 import logo from '../../public/FRESH BETON INDONESIA copy.png';
+import { Translate } from '@phosphor-icons/react';
+// Header.js
+
 const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const isScrolled = scrollY > 10;
+      setIsScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Membersihkan event listener pada unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <header className="flex justify-between items-center py-4 px-6 bg-gray-800 text-white">
+    <header className="bg-white text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50">
+    {/* // <header className={` text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50 ${isScrolled ? 'bg-opacity-25' : 'bg-white'}`}>   */}
+    {/* <header className={` text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50 bg-white`}>   */}
+    {/* Logo di kiri */}
       <div className="flex items-center">
-        <div style={{ width: '150px', height: '50px' }}>
-          {/* Atur ukuran sesuai kebutuhan Anda */}
-          <Image src={logo} alt="Logo" width={50} height={20} />
-        </div>
-        {/* <div className="text-xl font-bold">Fresh beto</div> */}
+        <Image src={logo} alt="Logo" width={50} height={50}/>
       </div>
-      <div className="flex justify-center space-x-8">
-        <a href="#" className="hover:text-gray-400">
-          About Us
-        </a>
-        <a href="#" className="hover:text-gray-400">
-          Portfolio
-        </a>
-        <a href="#" className="hover:text-gray-400">
-          News
-        </a>
-      </div>
-      <div>
-        <button className="text-white hover:text-gray-400">Translate</button>
-      </div>
+      
+      {/* Menu di tengah */}
+      <nav className="flex space-x-4 gap-6">
+        <a href="#" className="hover:text-gray-300">About Us</a>
+        <a href="#product" className="hover:text-gray-300">Product</a>
+        <a href="#" className="hover:text-gray-300">Portfolio</a>
+        <a href="#" className="hover:text-gray-300">News</a>
+      </nav>
+
+      {/* Tombol Translate di kanan */}
+      <button className="text-black hover:text-gray-300">
+      <Translate size={32} />
+      </button>
     </header>
   );
 };
 
 export default Header;
+
