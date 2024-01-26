@@ -1,11 +1,13 @@
+"use client"
 import React from 'react';
-import logoFBI from '@IMG_8274.png'; // Used as background image
+import logoFBI from '../../public/IMG_8274.png'; // Used as background image
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-cover bg-center bg-[#65B741]">
+    // <section className="relative h-screen bg-cover bg-center bg-[#65B741]">
+    <section className="relative h-screen bg-center">
       {/* Background Image */}
-      {/* <div className="absolute inset-0 bg-cover bg-center top-0" style={{ backgroundImage: `url(${logoFBI})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
+      <div className="absolute inset-0 bg-cover bg-center top-0" style={{ backgroundImage: `url(${logoFBI})`,width: "auto", height: "auto", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 
       {/* Overlay untuk efek gelas */}
       {/* Ensure you remove unnecessary comments */}
