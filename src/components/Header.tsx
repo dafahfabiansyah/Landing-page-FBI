@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import logo from '../../public/FRESH BETON INDONESIA copy.png';
 import { Translate } from '@phosphor-icons/react';
+import Link from 'next/link';
 // Header.js
 
 const Header = () => {
@@ -29,7 +30,9 @@ const Header = () => {
     {/* <header className={` text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50 bg-white`}>   */}
     {/* Logo di kiri */}
       <div className="flex items-center">
+        <Link href="/">
         <Image src={logo} alt="Logo" width={50} height={50}/>
+        </Link>
       </div>
       
       {/* Menu di tengah */}

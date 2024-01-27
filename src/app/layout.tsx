@@ -6,7 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fresh Beton Indonesia",
-  description: "Official website untuk Fresh Beton Indonesia",
+  description: "Demo website untuk Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
 };
 
 export default function RootLayout({

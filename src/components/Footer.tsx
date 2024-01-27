@@ -4,6 +4,8 @@ import { FacebookLogo, LinkedinLogo, PhoneCall, TwitterLogo, YoutubeLogo } from 
 import React, { ReactNode } from 'react';
 import IconFbi from '../../public/FRESH BETON INDONESIA-.png'
 import Image from "next/image";
+import Link from "next/link";
+import GoogleMaps from '@/components/GoogleMaps';
 interface LinkGroupProps {
     children: ReactNode;
     header: string;
@@ -32,10 +34,15 @@ const Footer = () => {
                     className="max-full"
                   />
                 </a>
-                <p className="mb-7 text-base text-body-color dark:text-dark-6">
+                {/* <p className="mb-7 text-base text-body-color dark:text-dark-6">
                   Sed ut perspiciatis undmnis is iste natus error sit amet
                   voluptatem totam rem aperiam.
-                </p>
+                </p> */}
+                <GoogleMaps location={{
+                  lat: 0,
+                  lng: 0
+                }}/>
+               
                 <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                   <span className="mr-3 text-primary">
                     <PhoneCall size={32} />
@@ -67,9 +74,22 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            {/* <script async
-    src="https://maps.googleapis.com/maps/api/js?key=&loading=async&region=ID&language=in&callback=initMap">
-</script> */}
+            <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+              <div className="mb-10 w-full">
+                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                  Follow Us On
+                </h4>
+                <div className="mb-6 flex items-center gap-2">
+                <button>
+                  <Link href="/contact" className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Contact</Link>
+                </button>
+                </div>
+                <p className="text-base text-body-color dark:text-dark-6 capitalize">
+                  &copy; {getDate()} fresh beton indonesia
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </footer>

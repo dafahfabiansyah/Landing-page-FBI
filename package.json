@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "@phosphor-icons/react": "^2.0.15",
     "@radix-ui/react-scroll-area": "^1.0.5",
+    "@react-google-maps/api": "^2.19.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.315.0",
