@@ -43,12 +43,12 @@ const Footer = () => {
                   lng: 0
                 }}/>
                
-                <p className="flex items-center text-sm font-medium text-dark dark:text-white">
+                {/* <p className="flex items-center text-sm font-medium text-dark dark:text-white">
                   <span className="mr-3 text-primary">
                     <PhoneCall size={32} />
                   </span>
                   <span>+62 815 7474 7474 </span>
-                </p>
+                </p> */}
               </div>
             </div>
             <LinkGroup header="Company">

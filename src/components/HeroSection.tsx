@@ -15,8 +15,8 @@ const HeroSection = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
+        width: "full",
+        height: "full",
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
@@ -38,10 +38,10 @@ const HeroSection = () => {
       </div>
 
       {/* Deskripsi di bawah bagian utama */}
-      <div className='text-center text-white absolute bottom-0 left-0 bg-white bg-opacity-30 p-4 px-48 w-full'>
+      {/* <div className='text-center text-white absolute bottom-0 left-0 bg-white bg-opacity-30 p-4 px-48 w-full'>
         <h1 className='text-4xl font-bold text-orange-600'>PT. Fresh Beton Indonesia adalah </h1>
         perusahaan beton siap pakai dan beton pracetak. Berdiri sejak Maret 2018 dengan Batching Plant permanen di Neglasari, Sukabumi, bersama dengan Quary dan Crusher PT.GBP. Batching plant memiliki kapasitas 60 m3/jam dengan Armada Truck Mixer 15 unit (kapasitas 7 m3) dan 5 unit Truck minimix. Kami terus berinovasi dalam proses, peralatan, dan material untuk memenuhi standar mutu yang dibutuhkan.
-      </div>
+      </div> */}
     </section>
   );
 };

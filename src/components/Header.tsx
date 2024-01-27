@@ -37,10 +37,10 @@ const Header = () => {
       
       {/* Menu di tengah */}
       <nav className="flex space-x-4 gap-6">
-        <a href="#" className="hover:text-gray-300">About Us</a>
-        <a href="#product" className="hover:text-gray-300">Product</a>
-        <a href="#" className="hover:text-gray-300">Portfolio</a>
-        <a href="#" className="hover:text-gray-300">News</a>
+        <a href="/about" className="hover:text-gray-300">About Us</a>
+        <a href="/product" className="hover:text-gray-300">Product</a>
+        <a href="/portfolio" className="hover:text-gray-300">Portfolio</a>
+        <a href="/news" className="hover:text-gray-300">News</a>
       </nav>
 
       {/* Tombol Translate di kanan */}
