@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* <div className="absolute inset-0 bg-cover bg-center top-0" style={{ backgroundImage: `url(${logoFBI})`,width: "auto", height: "auto", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
       <div style={{
         // use the src property of the image object
-        backgroundImage: `url(${backgroundImage.src})`,
+        backgroundImage: `url(${backgroundImage})`,
         // other styles
         backgroundPosition: "center",
         backgroundSize: "cover",

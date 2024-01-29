@@ -3,7 +3,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ServicesSection = () => {
   return (
-  <section>
+  <section className='bg-[#99BC85]'>
     <h1 className='text-4xl font-bold text-orange-600 text-center py-3' >product and service</h1>
       <div className="flex justify-center items-center h-max">
       <div className="h-screen flex justify-center items-center">

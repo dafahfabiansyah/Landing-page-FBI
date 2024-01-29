@@ -27,13 +27,13 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap justify-center"> {/* Modifikasi di sini */}
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <a href="https://freshbetonindonesia.vercel.app/" target="_blank" className="mb-6 inline-block max-w-[160px]">
+                {/* <a href="https://freshbetonindonesia.vercel.app/" target="_blank" className="mb-6 inline-block max-w-[160px]">
                   <Image
                     src={IconFbi}
                     alt="logo"
                     className="max-full"
                   />
-                </a>
+                </a> */}
                 {/* <p className="mb-7 text-base text-body-color dark:text-dark-6">
                   Sed ut perspiciatis undmnis is iste natus error sit amet
                   voluptatem totam rem aperiam.

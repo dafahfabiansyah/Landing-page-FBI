@@ -1,13 +1,25 @@
 import Header from '@/components/Header'
 import React from 'react'
+import Card from '@/components/ui/card';
+import { ProductData } from '@/data/ProductData';
+import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
   return (
-    <>
-    <Header/>
-    <div>Ini halaman product</div>
-    </>
-  )
+     <section>
+      <Header/>
+       <div className='gap-4 flex flex-wrap justify-center'>
+          {ProductData.map(product => (
+              <Card key={product.id} product={product} />
+          ))}
+      </div>
+      <div className='text-center mt-4'> {/* Container untuk tombol */}
+          <Link href='/product'>
+              <button className='underline mb-2'>View All</button>
+          </Link>
+      </div>
+     </section>
+  );
 }
 
-export default page
+export default Page
