@@ -6,6 +6,7 @@ import IconFbi from '../../public/FRESH BETON INDONESIA-.png'
 import Image from "next/image";
 import Link from "next/link";
 import GoogleMaps from '@/components/GoogleMaps';
+
 interface LinkGroupProps {
     children: ReactNode;
     header: string;
@@ -89,7 +90,6 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </footer>

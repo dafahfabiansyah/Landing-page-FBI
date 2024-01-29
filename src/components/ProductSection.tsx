@@ -10,7 +10,8 @@ const ProductSection = () => {
 
     return (
        <section>
-         <div className='gap-4 flex flex-wrap justify-center'>
+        <h1 className='text-center text-green-800 pb-4 text-4xl font-bold capitalize'>our products</h1>
+         <div className='gap-6 flex flex-wrap justify-center'>
             {limitedProductData.map(product => (
                 <Card key={product.id} product={product} />
             ))}
