@@ -1,18 +1,19 @@
-// components/Header.tsx
-'use client';
+"use client"
+
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useState } from 'react';
 import logo from '../../public/FRESH BETON INDONESIA copy.png';
 import { Translate } from '@phosphor-icons/react';
 import Link from 'next/link';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activePage, setActivePage] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const isTop = scrollTop < 50; // Atur nilai scroll threshold sesuai kebutuhan
+      const isTop = scrollTop < 50;
       if (isTop !== isScrolled) {
         setIsScrolled(isTop);
       }
@@ -25,6 +26,11 @@ const Header = () => {
     };
   }, [isScrolled]);
 
+  useEffect(() => {
+    // Determine active page based on window location
+    setActivePage(window.location.pathname);
+  }, []);
+
   return (
     <header className={`drop-shadow-md text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50 ${isScrolled ? 'bg-transparent' : 'bg-white'}`}>
       {/* Logo di kiri */}
@@ -36,10 +42,10 @@ const Header = () => {
       
       {/* Menu di tengah */}
       <nav className="flex space-x-4 gap-6">
-        <a href="/about" className="hover:text-green-800">About Us</a>
-        <a href="/product" className="hover:text-green-800">Product</a>
-        <a href="/portfolio" className="hover:text-green-800">Portfolio</a>
-        <a href="/news" className="hover:text-green-800">News</a>
+        <NavLink href="/about" active={activePage === '/about'}>About Us</NavLink>
+        <NavLink href="/product" active={activePage === '/product'}>Product</NavLink>
+        <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portfolio</NavLink>
+        <NavLink href="/news" active={activePage === '/news'}>News</NavLink>
       </nav>
 
       {/* Tombol Translate di kanan */}
@@ -47,6 +53,23 @@ const Header = () => {
         <Translate size={32} />
       </button>
     </header>
+  );
+};
+
+// Component for NavLink with dynamic styling for active page
+interface NavLinkProps {
+  href: string;
+  active: boolean;
+  children: ReactNode;
+}
+
+const NavLink = ({ href, active, children }: NavLinkProps) => {
+  return (
+    <Link href={href}>
+      <div className={`hover:text-green-800 ${active ? 'border-b-2 border-green-800' : ''}`}>
+        {children}
+      </div>
+    </Link>
   );
 };
 
