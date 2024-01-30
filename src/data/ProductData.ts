@@ -1,31 +1,35 @@
+import boxCulvurt from '../../public/product_1.jpg';
+
 export const ProductData = [
     {
         id: 1,
-        name: 'Product 1',
+        name: 'BOX CULVERT',
         price: 1000,
+        // image: boxCulvurt,
         image: 'https://via.placeholder.com/50'
+        // image: '../../public/product_1.jpg',
     },
     {
         id: 2,
-        name: 'Product 2',
+        name: 'COVER U-DITCH',
         price: 2000,
         image: 'https://via.placeholder.com/50'
     },
     {
         id: 3,
-        name: 'Product 3',
+        name: 'pagar panel',
         price: 3000,
         image: 'https://via.placeholder.com/50'
     },
     {
         id: 4,
-        name: 'Product 4',
+        name: 'Road barrier',
         price: 4000,
         image: 'https://via.placeholder.com/50'
     },
     {
         id: 5,
-        name: 'Product 5',
+        name: 'U Ditch',
         price: 5000,
         image: 'https://via.placeholder.com/50'
     },

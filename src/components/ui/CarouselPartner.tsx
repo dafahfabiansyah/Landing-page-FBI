@@ -33,6 +33,24 @@ const CarouselPartner = () => {
           {/* <p className="legend">Legend 3</p> */}
       </div>
     </Carousel>
+    // <div>
+    //     <div className="w-full px-4">
+    //       <div className="flex flex-wrap items-center justify-center">
+    //         <a href="https://www.google.com/?hl=ID" target="_blank" className="max-w-[120px] mx-4 py-9 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+    //           <Image src="dist/img/clients/Google.svg" alt="Google"/>
+    //         </a>
+    //         <a href="https://www.gojek.com" target="_blank" className="max-w-[120px] mx-4 py-9 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+    //           <Image src="dist/img/clients/Gojek.svg" alt="Google"/>
+    //         </a>
+    //         <a href="https://www.tokopedia.com" target="_blank" className="max-w-[120px] mx-4 py-9 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+    //           <Image src="dist/img/clients/Tokopedia.svg" alt="Google"/>
+    //         </a>
+    //         <a href="https://id.duolingo.com" target="_blank" className="max-w-[120px] mx-4 py-9 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+    //           <Image src="dist/img/clients/Duolingo.svg" alt="Google"/>
+    //         </a>
+    //       </div>
+    //     </div>
+    // </div>
   )
 }
 

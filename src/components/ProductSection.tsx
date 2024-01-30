@@ -9,8 +9,8 @@ const ProductSection = () => {
     const limitedProductData = ProductData.slice(0, 3);
 
     return (
-       <section>
-        <h1 className='text-center text-green-800 pb-4 text-4xl font-bold capitalize'>our products</h1>
+       <section className='bg-white'>
+        <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>produk kami</h1>
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedProductData.map(product => (
                 <Card key={product.id} product={product} />

@@ -1,5 +1,5 @@
 "use client"
-import { ArrowLineUp, Bell, WhatsappLogo, X } from "@phosphor-icons/react";
+import { ArrowLineUp, Bell, ShoppingCart, WhatsappLogo, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import tokopediIcon from "../../public/tokopedia-svgrepo-com.svg";
 import Image from "next/image";
@@ -61,7 +61,7 @@ function FloatingIcon() {
             onMouseEnter={() => setHoveringMainButton(true)}
             onMouseLeave={() => setHoveringMainButton(false)}
           >
-            {subMenuVisible ? <ArrowLineUp size={32} className='transition-all hover:rotate-45'/>:<Bell size={32} />}
+            {subMenuVisible ? <ArrowLineUp size={32} className='transition-all hover:rotate-45'/>:<ShoppingCart size={32} />}
           </button>
         </div>
       </div>
