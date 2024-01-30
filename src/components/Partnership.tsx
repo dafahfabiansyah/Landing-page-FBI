@@ -7,9 +7,9 @@ const Partnership = () => {
   return (
    <section>
      <div className='text-4xl font-bold text-orange-600 text-center py-3 capitalize'>Partnership</div>
-   {/* <div>
+   <div>
    <CarouselPartner/>
-   </div> */}
+   </div>
    </section>
   )
 }

@@ -18,8 +18,8 @@ export default function Home() {
       <ServicesSection/>
       <TestimonialsSection/>
       <Partnership/>
+      <FloatingIcon/>
       <Footer/>
-      {/* <FloatingIcon/> */}
     </>
   );
 }

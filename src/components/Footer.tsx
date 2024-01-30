@@ -16,7 +16,7 @@ interface LinkGroupProps {
     label: string;
   }
 
-const getDate = () => {
+const getCurrentDate = () => {
   return new Date().getFullYear();
 }
 
@@ -65,20 +65,20 @@ const Footer = () => {
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center gap-2">
-                  <FacebookLogo size={32} className="hover:text-blue-600 transition-all" />
-                  <TwitterLogo size={32} className="hover:text-blue-400 transition-all"/>
+                  <FacebookLogo size={32} className="hover:bg-[#3b5998] hover:text-white rounded-md transition-all" />
+                  <TwitterLogo size={32} className="hover:bg-[#1DA1F2] hover:text-white rounded-md transition-all"/>
                   <YoutubeLogo size={32} className="hover:text-white rounded-md hover:bg-red-500 transition-all" />
-                  <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-blue-300 transition-all"/>
+                  <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-[#0e76a8] transition-all"/>
                 </div>
-                <p className="text-base text-body-color dark:text-dark-6 capitalize">
-                  &copy; {getDate()} fresh beton indonesia
-                </p>
+                {/* <p className="text-base text-body-color dark:text-dark-6 capitalize">
+                  &copy; {getCurrentDate()} fresh beton indonesia
+                </p> */}
               </div>
             </div>
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
                 <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-                  Follow Us On
+                Contact Us
                 </h4>
                 <div className="mb-6 flex items-center gap-2">
                 <button>
@@ -86,7 +86,7 @@ const Footer = () => {
                 </button>
                 </div>
                 <p className="text-base text-body-color dark:text-dark-6 capitalize">
-                  &copy; {getDate()} fresh beton indonesia
+                  &copy; {getCurrentDate()} fresh beton indonesia
                 </p>
               </div>
             </div>
