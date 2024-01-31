@@ -1,8 +1,6 @@
 "use client"
-import { FacebookLogo, LinkedinLogo, PhoneCall, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
-// import React, { ReactNode } from "react";
+import { FacebookLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
 import React, { ReactNode } from 'react';
-import IconFbi from '../../public/FRESH BETON INDONESIA-.png'
 import Image from "next/image";
 import Link from "next/link";
 import GoogleMaps from '@/components/GoogleMaps';

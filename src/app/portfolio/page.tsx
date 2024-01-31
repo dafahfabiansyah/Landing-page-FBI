@@ -1,16 +1,21 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Card from '@/components/ui/cardPortfolio'
+import { PortfolioData } from '@/data/PortfolioData'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
   return (
-    <>
+    <section>
     <Header/>
-    <h1>Portfolio</h1>
-    {/* <Card portfolio={}}/> */}
-    <Footer/>
-    </>
+     <div className='gap-4 flex flex-wrap justify-center py-4'>
+        {PortfolioData.map(portfolio => (
+            <Card key={portfolio.id} portfolio={portfolio} />
+        ))}
+    </div>
+   <Footer/>
+   </section>
   )
 }
 

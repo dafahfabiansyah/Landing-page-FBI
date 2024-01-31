@@ -1,5 +1,4 @@
 "use client"
-
 import Image from 'next/image';
 import React, { ReactNode, useEffect, useState } from 'react';
 import logo from '../../public/FRESH BETON INDONESIA copy.png';
@@ -44,7 +43,7 @@ const Header = () => {
       <nav className="flex space-x-4 gap-6">
         <NavLink href="/about" active={activePage === '/about'}>About Us</NavLink>
         <NavLink href="/product" active={activePage === '/product'}>Product</NavLink>
-        <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portfolio</NavLink>
+        <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portofolio</NavLink>
         <NavLink href="/news" active={activePage === '/news'}>News</NavLink>
       </nav>
 
