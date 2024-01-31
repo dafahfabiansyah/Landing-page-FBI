@@ -1,5 +1,4 @@
 import React from 'react';
-import testIcon from '../../public/IMG_8274.png';
 import Card from './ui/card';
 import Link from 'next/link';
 import { ProductData } from '@/data/ProductData';

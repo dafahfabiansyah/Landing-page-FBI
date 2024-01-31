@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { EnvelopeOpen } from '@phosphor-icons/react';
 
 const Page = () => {
   const [name, setName] = useState('');

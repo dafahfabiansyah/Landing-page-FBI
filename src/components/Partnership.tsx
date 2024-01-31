@@ -5,8 +5,8 @@ import CarouselPartner from './ui/CarouselPartner'
 
 const Partnership = () => {
   return (
-   <section>
-     <div className='text-4xl font-bold text-orange-600 text-center py-3 capitalize'>Partnership</div>
+   <section className='h-screen'>
+     <div className='text-4xl font-bold text-orange-600 text-center capitalize'>Partnership</div>
    <div>
    <CarouselPartner/>
    </div>
