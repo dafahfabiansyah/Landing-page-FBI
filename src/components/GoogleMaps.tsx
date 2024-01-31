@@ -24,7 +24,7 @@ import Image from 'next/image';
 const Map = ({ location }: { location: { lat: number; lng: number } }) => {
     return (
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4961342587562!2d106.75356567366342!3d-6.198084293789607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f77305c654ff%3A0x5c50db3133a6daae!2sPT.%20FARRASINDO%20PERKASA%20-%20HEAD%20OFFICE%20(%20CONCRETE%20PUMP%20)!5e0!3m2!1sid!2sid!4v1706607589275!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15856.670885488313!2d106.8683186!3d-6.5004403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1333e6b69b5%3A0x70e54a6025821aff!2sPT.%20FRESH%20BETON%20INDONESIA%20CABANG%20SENTUL!5e0!3m2!1sen!2sid!4v1706691732713!5m2!1sen!2sid"
             width="100%"
             height="245px"
             style={{ border: 0 }}

@@ -11,8 +11,6 @@ export const ProductData = [
         name: 'box culvurt',
         price: 1000,
         image: boxCulvurt,
-        // image: 'https://via.placeholder.com/50'
-        // image: '../../public/product_1.jpg',
     },
     {
         id: 2,
