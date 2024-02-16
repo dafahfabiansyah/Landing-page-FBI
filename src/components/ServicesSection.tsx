@@ -1,4 +1,7 @@
+"use client"
+
 import React from 'react';
+import { ServicesData } from '@/data/ServicesData';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ServicesSection = () => {
@@ -15,13 +18,22 @@ const ServicesSection = () => {
                 <th className="sticky top-0 px-6 py-3 text-white bg-[#5F7161]">Slump</th>
               </tr>
             </thead>
-            <tbody>
               {/* Dummy data, can add column here */}
+            {/* <tbody>
               {[...Array(12)].map((_, index) => (
                 <tr key={index} className={index % 2 === 0 ? 'bg-[#B7E5B4]' : 'bg-[#DBE7C9]'}>
                   <td className="px-6 py-4 text-center">Column</td>
                   <td className="px-6 py-4 text-center">Column</td>
                   <td className="px-6 py-4 text-center">Column</td>
+                </tr>
+              ))}
+            </tbody> */}
+            <tbody>
+              {ServicesData.map((service, index) => (
+                <tr key={index} className={index % 2 === 0 ? 'bg-[#B7E5B4]' : 'bg-[#DBE7C9]'}>
+                  <td className="px-6 py-4 text-center">{service.Mutu_K}</td>
+                  <td className="px-6 py-4 text-center">{service.Mutu_FC}</td>
+                  <td className="px-6 py-4 text-center">{service.slump}</td>
                 </tr>
               ))}
             </tbody>
