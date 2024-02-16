@@ -1,5 +1,5 @@
 "use client"
-import { FacebookLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
 import React, { ReactNode } from 'react';
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +20,7 @@ const getCurrentDate = () => {
 
 const Footer = () => {
   return (
-    <footer className="flex z-10 items-center place-items-center bg-white gap-4 justify-between mx-auto">
+    <footer className="bg-[#252525] text-white pt-10 flex z-10 items-center place-items-center gap-4 justify-between mx-auto">
     <div className="container">
       <div className="-mx-4 flex flex-wrap justify-center"> {/* Modifikasi di sini */}
         <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -62,10 +62,14 @@ const Footer = () => {
               Follow Us On
             </h4>
             <div className="mb-6 flex items-center gap-2">
+              <Link href="https://www.facebook.com/Freshbetonindonesia/" target="_blank">
               <FacebookLogo size={32} className="hover:bg-[#3b5998] hover:text-white rounded-md transition-all" />
-              <TwitterLogo size={32} className="hover:bg-[#1DA1F2] hover:text-white rounded-md transition-all"/>
-              <YoutubeLogo size={32} className="hover:text-white rounded-md hover:bg-red-500 transition-all" />
-              <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-[#0e76a8] transition-all"/>
+              </Link>
+              <Link href="https://www.instagram.com/freshbeton_indonesia/" target="_blank">
+              <InstagramLogo size={32} className="hover:bg-[#405DE6] hover:text-white rounded-md transition-all"/>
+              </Link>
+              {/* <YoutubeLogo size={32} className="hover:text-white rounded-md hover:bg-red-500 transition-all" />
+              <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-[#0e76a8] transition-all"/> */}
             </div>
             {/* <p className="text-base text-body-color dark:text-dark-6 capitalize">
               &copy; {getCurrentDate()} fresh beton indonesia

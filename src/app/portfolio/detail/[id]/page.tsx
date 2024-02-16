@@ -1,6 +1,6 @@
 // Import dependencies
 import React from 'react';
-import { ProductData } from '@/data/ProductData';
+import { PortfolioData } from '@/data/PortfolioData';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,7 +11,7 @@ const Page = ({ params }: { params: PageParams }) => {
     const { id } = params;
   
     // Parse the id into a number
-    const productId = parseInt(id, 10); // Using parseInt with radix 10
+    const portfolioId = parseInt(id, 10); // Using parseInt with radix 10
   
     return (
       <div>
@@ -20,11 +20,12 @@ const Page = ({ params }: { params: PageParams }) => {
         <div className='pt-2 pb-5'>
         <div>ID: {id}</div>
         {/* Access product data using the parsed id */}
-        <div>nama: {ProductData[productId - 1].name}</div>
+        <div>nama: {PortfolioData[portfolioId - 1].name}</div>
         {/* Use the parsed id to access the image */}
         <div className='flex items-center justify-center justify-items-center'>
-        <Image src={ProductData[productId - 1].image} alt={ProductData[productId - 1].name} />
+        <Image src={PortfolioData[portfolioId - 1].image} alt={PortfolioData[portfolioId- 1].name} />
         </div>
+        <div>deskripsi: {PortfolioData[portfolioId - 1].description}</div>
         </div>
         <Footer/>
       </div>
@@ -32,18 +33,3 @@ const Page = ({ params }: { params: PageParams }) => {
   }
 
   export default Page
-
-  //   const Page = ({ params }: { params: PageParams }) => {
-//     const { id } = params;
-  
-//     return (
-//       <div>
-//         {/* Menampilkan nilai 'id' */}
-//         <div>ID: {id}</div>
-//         <div>nama: {ProductData[id - 1].name}</div>
-//         <Image src={ProductData[id - 1].image} alt={ProductData[id - 1].name} />
-//       </div>
-//     );
-//   }
-
-// export default Page;

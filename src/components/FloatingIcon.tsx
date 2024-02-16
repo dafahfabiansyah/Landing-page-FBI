@@ -20,7 +20,7 @@ function FloatingIcon() {
   };
 
   return (
-    <div className="fixed bottom-0 right-0 z-50 rounded-full">
+    <div className="fixed bottom-0 right-0 z-50 rounded-full pr-1 pb-1">
       <div className="flex items-center">
         <div
           className="relative"

@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`drop-shadow-md text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50 ${isScrolled ? 'bg-transparent' : 'bg-white'}`}>
+    <header className={`pt-4 drop-shadow-md text-black p-4 flex justify-between items-center px-10 sticky top-0 z-50`}>
       {/* Logo di kiri */}
       <div className="flex items-center">
         <Link href="/">
@@ -40,10 +40,12 @@ const Header = () => {
       </div>
       
       {/* Menu di tengah */}
-      <nav className="flex space-x-4 gap-6">
+      <nav className="flex space-x-4 gap-6 uppercase">
+        <NavLink href="/" active={activePage === '/'}>Home</NavLink>
         <NavLink href="/about" active={activePage === '/about'}>About Us</NavLink>
         <NavLink href="/product" active={activePage === '/product'}>Product</NavLink>
         <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portofolio</NavLink>
+        <NavLink href="/contact" active={activePage === '/contact'}>Contact Us</NavLink>
         <NavLink href="/news" active={activePage === '/news'}>News</NavLink>
       </nav>
 
