@@ -8,7 +8,7 @@ const Page = () => {
   return (
      <section>
       <Header/>
-       <div className='gap-4 flex flex-wrap justify-center'>
+       <div className='gap-4 flex flex-wrap justify-center py-1 pt-20'>
           {ProductData.map(product => (
               <Card key={product.id} product={product} />
           ))}

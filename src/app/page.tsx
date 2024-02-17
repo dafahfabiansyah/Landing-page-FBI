@@ -8,6 +8,7 @@ import ServicesSection from '@/components/ServicesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Partnership from '@/components/Partnership';
 import PortfolioSection from '@/components/PortfolioSection';
+import AboutSection from '@/components/AboutSection';
 // import { WhatsappLogo } from '@phosphor-icons/react';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Header />
       <HeroSection />
+      <AboutSection/>
       <ProductSection/>
       <ServicesSection/>
       <PortfolioSection/>

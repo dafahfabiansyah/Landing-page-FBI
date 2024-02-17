@@ -11,7 +11,7 @@ const page = () => {
   return (
     <section>
     <Header/>
-     <div className='gap-4 flex flex-wrap justify-center py-4'>
+     <div className='gap-4 flex flex-wrap justify-center py-1 pt-20 '>
         {PortfolioData.map(portfolio => (
             <Card key={portfolio.id} portfolio={portfolio} />
         ))}
