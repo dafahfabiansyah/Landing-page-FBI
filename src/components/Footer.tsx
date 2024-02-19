@@ -20,7 +20,7 @@ const getCurrentDate = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#252525] text-white pt-10 flex z-10 items-center place-items-center gap-4 justify-between mx-auto">
+    <footer className="bg-[#2E2E2E] text-white pt-10 flex z-10 items-center place-items-center gap-4 justify-between mx-auto">
     <div className="container">
       <div className="-mx-4 flex flex-wrap justify-center"> {/* Modifikasi di sini */}
         <div className="w-full px-4 sm:w-2/3 lg:w-3/12">

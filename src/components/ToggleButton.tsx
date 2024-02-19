@@ -2,26 +2,29 @@ import React, { useState } from 'react';
 import './ToggleButton.css'; // Import stylesheet for animation
 
 const ToggleButton = () => {
-  const [isNightMode, setIsNightMode] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  const toggleMode = () => {
-    setIsNightMode(prevMode => !prevMode);
+  const handleToggleChange = () => {
+    setIsChecked(!isChecked);
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <button
-        onClick={toggleMode}
-        className={`toggle-button ${
-          isNightMode ? 'night-mode' : 'light-mode'
-        }`}
+    <div className="toggle-switch transition-all">
+      <input
+        type="checkbox"
+        className="toggle-switch-checkbox"
+        name="toggleSwitch"
+        id="toggleSwitch"
+        checked={isChecked}
+        onChange={handleToggleChange}
+      />
+      <label
+        className={`toggle-switch-label ${isChecked ? 'toggle-switch-label-on' : ''}`}
+        htmlFor="toggleSwitch"
       >
-        <div className="sun-moon">
-          <div className="sun"></div>
-          <div className="moon"></div>
-        </div>
-        {isNightMode ? 'Night Mode' : 'Light Mode'}
-      </button>
+        <span className="toggle-switch-inner" />
+        <span className={`toggle-switch-switch ${isChecked ? 'toggle-switch-switch-on' : ''}`} />
+      </label>
     </div>
   );
 };

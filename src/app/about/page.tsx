@@ -6,7 +6,7 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <section className='container mx-auto'>
+    <section className='mx-auto'>
       <Header/>
       {/* <div>
       <CarouselHero/>

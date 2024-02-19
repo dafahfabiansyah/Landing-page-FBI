@@ -1,64 +1,54 @@
-.toggle-button {
-    background-color: #f5f5dc;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sun-moon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-  }
-  
-  .sun,
-  .moon {
-    width: 25px;
-    height: 25px;
-    background-color: #ffcc00;
-    border-radius: 50%;
-  }
-  
-  .sun {
-    position: absolute;
-    left: 5px;
-    animation: moveSun 0.5s linear forwards;
-  }
-  
-  .moon {
-    position: absolute;
-    right: 5px;
-    opacity: 0;
-  }
-  
-  .light-mode .sun {
-    animation: moveSunBack 0.5s linear forwards;
-  }
-  
-  .light-mode .moon {
-    opacity: 1;
-  }
-  
-  @keyframes moveSun {
-    from {
-      left: 5px;
-    }
-    to {
-      left: calc(100% - 30px);
-    }
-  }
-  
-  @keyframes moveSunBack {
-    from {
-      left: calc(100% - 30px);
-    }
-    to {
-      left: 5px;
-    }
-  }
-  
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 34px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in-out;
+}
+
+.toggle-switch-switch {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  left: 30px;
+}
+
+.toggle-switch-label-on {
+  background-color: #65a30d;
+  border-color: #65a30d;
+}
+
+.toggle-switch-switch-on {
+  background-color: #fff;
+}
