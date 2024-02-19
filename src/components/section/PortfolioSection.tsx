@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Link from 'next/link';
-import Card from './ui/cardPortfolio';
+import Card from '../ui/cardPortfolio';
 import { PortfolioData } from '@/data/PortfolioData';
 
 const PortfolioSection = () => {

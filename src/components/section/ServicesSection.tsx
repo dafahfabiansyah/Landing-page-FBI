@@ -18,16 +18,6 @@ const ServicesSection = () => {
                 <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Slump</th>
               </tr>
             </thead>
-              {/* Dummy data, can add column here */}
-            {/* <tbody>
-              {[...Array(12)].map((_, index) => (
-                <tr key={index} className={index % 2 === 0 ? 'bg-[#B7E5B4]' : 'bg-[#DBE7C9]'}>
-                  <td className="px-6 py-4 text-center">Column</td>
-                  <td className="px-6 py-4 text-center">Column</td>
-                  <td className="px-6 py-4 text-center">Column</td>
-                </tr>
-              ))}
-            </tbody> */}
             <tbody>
               {ServicesData.map((service, index) => (
                 <tr key={index} className={index % 2 === 0 ? 'bg-[#1EB442]' : 'bg-[#FFFFFF]'}>

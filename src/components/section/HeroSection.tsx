@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import backgroundImage from '../../public/IMG_8274.png'; // Used as background image
-import CarouselHero from './ui/Carousel';
+import CarouselHero from '../ui/Carousel';
 import Link from 'next/link';
 
 

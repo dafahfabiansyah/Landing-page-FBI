@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import ProductSection from '@/components/ProductSection';
+import HeroSection from '@/components/section/HeroSection';
+import ProductSection from '@/components/section/ProductSection';
 import FloatingIcon from '@/components/FloatingIcon';
 import Footer from '@/components/Footer';
-import ServicesSection from '@/components/ServicesSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import Partnership from '@/components/Partnership';
-import PortfolioSection from '@/components/PortfolioSection';
-import AboutSection from '@/components/AboutSection';
+import ServicesSection from '@/components/section/ServicesSection';
+import TestimonialsSection from '@/components/section/TestimonialsSection';
+import Partnership from '@/components/section/Partnership';
+import PortfolioSection from '@/components/section/PortfolioSection';
+import AboutSection from '@/components/section/AboutSection';
 // import { WhatsappLogo } from '@phosphor-icons/react';
 
 export default function Home() {

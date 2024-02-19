@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import CarouselPartner from './ui/CarouselPartner'
+import CarouselPartner from '../ui/CarouselPartner'
 
 const Partnership = () => {
   return (
