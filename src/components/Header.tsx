@@ -77,9 +77,9 @@ const Header = () => {
           </Link>
         </div>
         
-        <nav className="hidden lg:flex space-x-4 gap-6 uppercase">
+        <nav className="hidden lg:flex space-x-4 gap-4 uppercase">
           <NavLink href="/" active={activePage === '/'}>Home</NavLink>
-          <NavLink href="/about" active={activePage === '/about'}>About Us</NavLink>
+          <NavLink href="/about" active={activePage === '/about'}>Fresh beton indonesia</NavLink>
           <NavLink href="/product" active={activePage === '/product'}>Product</NavLink>
           <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portofolio</NavLink>
           <NavLink href="/contact" active={false}>Contact Us</NavLink>

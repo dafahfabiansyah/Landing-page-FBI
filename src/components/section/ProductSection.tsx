@@ -8,8 +8,8 @@ const ProductSection = () => {
     const limitedProductData = ProductData.slice(0, 3);
 
     return (
-       <section className='bg-white block'>
-        <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>produk kami</h1>
+       <section className='bg-white block pb-10'>
+        <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize '>produk kami</h1>
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedProductData.map(product => (
                 <Card key={product.id} product={product} />
@@ -17,7 +17,7 @@ const ProductSection = () => {
         </div>
         <div className='text-center mt-4'> {/* Container untuk tombol */}
             <Link href='/product'>
-            <button className='text-white rounded-md p-2 bg-[#FF480C]'>View All</button>
+            <button className='text-white rounded-md p-2 bg-emerald-400 hover:bg-emerald-700 transition-all'>View All</button>
             </Link>
         </div>
        </section>
