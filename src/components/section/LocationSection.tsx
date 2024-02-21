@@ -8,8 +8,9 @@ const LocationSection = () => {
     const limitedLocationData = LocationData.slice(0, 3);
 
     return (
-        <section className='bg-white py-2 pb-10'>
-        <h1 className='text-center text-orange-600 pb-4 dark:bg-slate-800 dark:text-white text-4xl font-bold capitalize'>lokasi kami</h1>
+        <section className='bg-[#FAF5EF] py-2 pb-10'>
+        {/* <section className='bg-white py-2 pb-10'> */}
+        <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>lokasi kami</h1>
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedLocationData.map(location => (
                 <Card key={location.id} location={location} />

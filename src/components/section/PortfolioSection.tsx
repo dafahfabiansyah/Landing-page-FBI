@@ -8,7 +8,8 @@ const PortfolioSection = () => {
     const limitedProductData = PortfolioData.slice(0, 3);
 
     return (
-        <section className='bg-white pb-10'>
+        // <section className='bg-white pb-10'>
+        <section className='bg-[#FAF5EF] pb-10'>
         <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>portofolio</h1>
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedProductData.map(portfolio => (

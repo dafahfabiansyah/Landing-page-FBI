@@ -6,7 +6,7 @@ const TestimonialsSection = () => {
   return (
    <section>
     
-<div className="min-w-screen min-h-screen flex items-center justify-center py-5">
+<div className="min-w-screen bg-[#FAF5EF] min-h-screen flex items-center justify-center py-5">
     <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
     <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>testimoni</h1>
        <div className="w-full max-w-6xl mx-auto">

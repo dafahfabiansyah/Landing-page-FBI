@@ -6,7 +6,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 
 const ServicesSection = () => {
   return (
-    <section className=''>
+    <section className='bg-[#FAF5EF]'>
       <h1 className='text-4xl font-bold pb-10 text-orange-600 text-center capitalize'>mutu dan pelayanan</h1>
       <div className="flex flex-col h-80">
         <div className="flex-grow overflow-auto">

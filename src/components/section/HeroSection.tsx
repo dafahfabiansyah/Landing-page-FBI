@@ -8,7 +8,7 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
     // <section className="relative h-screen bg-cover bg-center bg-[#65B741]">
-    <section className="relative pb-12 bg-center dark:bg-slate-800 dark:text-white">
+    <section className="relative pb-12 bg-[#FAF5EF] bg-center">
       <CarouselHero/>
 
       {/* Overlay untuk efek gelas */}

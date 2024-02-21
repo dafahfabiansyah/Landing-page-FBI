@@ -4,7 +4,7 @@ import CarouselPartner from '../ui/CarouselPartner'
 
 const Partnership = () => {
   return (
-   <section className='py-2'>
+   <section className='py-2 bg-[#FAF5EF]'>
      <div className='text-4xl font-bold text-orange-600 text-center capitalize pb-1'>Partnership</div>
    <div>
    <CarouselPartner/>
