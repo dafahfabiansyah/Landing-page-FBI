@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <>
      {/* about us */}
-     <section className='flex flex-col items-center justify-center pb-10'>
+     <section className='flex flex-col dark:bg-slate-800 dark:text-white items-center justify-center pb-10'>
         <h1 className='font-bold text-center text-orange-600 text-4xl'>About Us</h1>
         <p className='text-center flex justify-center items-center pt-3'>
         PT. Fresh Beton Indonesia merupakan perusahaan yang bergerak di bidang beton siap pakai (readymix) dan beton pracetak (precast).
