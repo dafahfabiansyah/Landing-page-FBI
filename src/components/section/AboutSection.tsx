@@ -14,7 +14,7 @@ Fresh Beton Readymix berdiri mulai Maret 2018 dengan mendirikan Permanen Batchin
         </p>
         <div className='text-center mt-4'> 
             <Link href='/about'>
-                <button className='text-white rounded-md p-2 bg-emerald-400 hover:bg-emerald-700 transition-all'>View All</button>
+                <button className='text-white rounded-md p-2 bg-lime-400 hover:bg-lime-500 transition-all'>View All</button>
             </Link>
         </div>
         {/* <Link href='/about'>

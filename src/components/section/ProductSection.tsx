@@ -17,7 +17,7 @@ const ProductSection = () => {
         </div>
         <div className='text-center mt-4'> {/* Container untuk tombol */}
             <Link href='/product'>
-            <button className='text-white rounded-md p-2 bg-emerald-400 hover:bg-emerald-700 transition-all'>View All</button>
+            <button className='text-white rounded-md p-2 bg-lime-400 hover:bg-lime-500 transition-all'>View All</button>
             </Link>
         </div>
        </section>

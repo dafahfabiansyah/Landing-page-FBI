@@ -50,6 +50,28 @@ const Page = () => {
             {/* <h1 className='capitalize text-2xl'>nilai-nilai perusahaan</h1>
             <p>Komitmen kami terhadap misi senantiasa di landasi oleh nilai – nilai yang menjadi filosofi insan.</p> */}
           </div>
+        <div className="container mx-auto p-4">
+  <h1 className='capitalize text-2xl mb-4 text-emerald-500'>Nilai Budaya dan Integrasi Bisnis</h1>
+  <p className="mb-4">Komitmen kami terhadap misi senantiasa dilandasi oleh nilai – nilai yang menjadi filosofi insan.</p>
+  <ul>
+    <li className="mb-2">
+      <span className='text-5xl text-emerald-600'>S</span>emangat yang tinggi dalam belajar dan terus menggali ilmu untuk pengembangan dan mencapai visi misi perusahaan
+    </li>
+    <li className="mb-2">
+      <span className='text-5xl text-emerald-600'>M</span>emiliki integritas yang baik dan proporsional dalam melakukan segala sesuatu, agar tercipta suatu simbiosis yang saling menguntungkan
+    </li>
+    <li className="mb-2">
+      <span className='text-5xl text-emerald-600'>A</span>da keinginan untuk terus proaktif meningkatkan kinerja melalui penciptaan ide yang kreatif, inovatif, dan efisien yang berujung pada kesehatan karyawan
+    </li>
+    <li className="mb-2">
+      <span className='text-5xl text-emerald-600'>R</span>aihlah tekad menjadi bagian dari tim kerja yang solid dan dinamis
+    </li>
+    <li className="mb-2">
+      <span className='text-5xl text-emerald-600'>T</span>empatkan kepuasan pelanggan sebagai prioritas utama dalam tahapan SOP baik dari segi mutu, pengiriman, dan pelayanan
+    </li>
+  </ul>
+        </div>
+
           {/* gallery section */}
           <div className="grid grid-cols-3 gap-4">
             <div className="col-span-1">
