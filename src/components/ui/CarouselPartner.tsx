@@ -18,7 +18,7 @@ const CarouselPartner = () => {
       showStatus={false} 
       stopOnHover={true} 
       swipeable={true} 
-      className='flex justify-center items-center'
+      className='justify-center items-center block h-full'
     >
       <div>
           <Image src={PartnerImage1} className='flex justify-center items-center' alt={''} />

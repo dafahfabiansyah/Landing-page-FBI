@@ -16,7 +16,7 @@ const Card = ({ location }: { location: typeof LocationData[number] }) => {
     };
 
     return (
-        <div className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
+        <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
             <div onClick={redirectToUrl} className="cursor-pointer h-40 relative">
                 <Image
                     src={location.image}

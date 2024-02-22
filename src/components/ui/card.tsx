@@ -13,7 +13,7 @@ const Card = ({ product }: { product: typeof ProductData[number] }) => {
     };
 
     return (
-        <div className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
+        <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
             <div className="h-40 relative">
                 <Image
                     src={product.image}
