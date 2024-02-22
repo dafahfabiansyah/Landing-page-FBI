@@ -8,6 +8,7 @@ const ServicesSection = () => {
   return (
     <section className='bg-[#FAF5EF]'>
       <h1 className='text-4xl font-bold pb-10 text-orange-600 text-center capitalize'>mutu dan pelayanan</h1>
+      <p className='text-center text-black text-xl pb-2 font-bold capitalize'>berikut ini adalah kualitas dan mutu dari produk kami</p>
       <div className="flex flex-col h-80">
         <div className="flex-grow overflow-auto">
           <table className="relative w-full border">

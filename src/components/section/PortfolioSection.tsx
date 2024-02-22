@@ -11,6 +11,7 @@ const PortfolioSection = () => {
         // <section className='bg-white pb-10'>
         <section className='bg-[#FAF5EF] pb-10'>
         <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>portofolio</h1>
+        <p className='text-center text-black text-xl pb-2 font-bold capitalize'>berikut ini adalah proyek yang telah dikerjakan</p>
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedProductData.map(portfolio => (
                 <Card key={portfolio.id} portfolio={portfolio} />
