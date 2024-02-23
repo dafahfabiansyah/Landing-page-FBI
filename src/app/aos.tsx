@@ -8,8 +8,8 @@ export const AOSInit = () => {
   useEffect(() => {
     AOS.init({
         anchorPlacement: 'top-bottom',
-      easing: 'ease-out',
-      duration: 1000,
+        easing: 'ease-out',
+        duration: 1000,
     });
   }, [])
 

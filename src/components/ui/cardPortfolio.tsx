@@ -2,6 +2,7 @@ import React from 'react';
 import { PortfolioData } from '@/data/PortfolioData';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { CaretRight } from '@phosphor-icons/react';
 
 const Card = ({ portfolio }: { portfolio: typeof PortfolioData[number] }) => {
     const router = useRouter();
@@ -11,20 +12,22 @@ const Card = ({ portfolio }: { portfolio: typeof PortfolioData[number] }) => {
     };
 
     return (
-        <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
-            <div onClick={navigateToDetail} className="cursor-pointer h-40 relative">
+        <div data-aos="fade-up" className="flex flex-col bg-white border-solid border-2 rounded-md overflow-hidden shadow-md m-2">
+            <div className="relative h-40 w-96">
                 <Image
                     src={portfolio.image}
                     alt={portfolio.name}
                     layout="fill"
                     objectFit="cover"
-                    className="transition duration-500 hover:scale-110"
+                    className="transition duration-500 hover:scale-110 hover:z-50"
                 />
+                 <button onClick={navigateToDetail} className='z-10 absolute  right-0 backdrop-blur-sm hover:bg-white transition-all text-green-600 py-2 mt-14 rounded-lg text-center flex justify-center focus:outline-none'><CaretRight size={32} /></button>
             </div>
-            <div className="p-4">
-                <h1 className='capitalize text-black text-xl font-semibold mb-2'>{portfolio.name}</h1>
-                <p className='text-black mb-4'>{portfolio.description}</p>
-                <button onClick={navigateToDetail} className='bg-blue-500 hover:bg-blue-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>Details</button>
+            <div className="flex flex-col justify-between p-4 w-full">
+                <div>
+                    <h1 className='capitalize text-black text-xl font-semibold mb-2'>{portfolio.name}</h1>
+                    <p className='text-black mb-4'>{portfolio.description}</p>
+                </div>
             </div>
         </div>
     );

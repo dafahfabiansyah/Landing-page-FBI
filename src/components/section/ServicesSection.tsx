@@ -14,17 +14,17 @@ const ServicesSection = () => {
           <table className="relative w-full border">
             <thead>
               <tr>
-                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu K (kg/cm2)</th>
-                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu FC (Mpa)</th>
-                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Slump</th>
+                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu Beton K (kg/cm2)</th>
+                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu Beton FC (Mpa)</th>
+                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Perkiraan Kuat Tekan</th>
               </tr>
             </thead>
             <tbody>
               {ServicesData.map((service, index) => (
                 <tr key={index} className={index % 2 === 0 ? 'bg-[#1EB442]' : 'bg-[#FFFFFF]'}>
-                  <td className="px-6 py-4 text-center">{service.Mutu_K}</td>
-                  <td className="px-6 py-4 text-center">{service.Mutu_FC}</td>
-                  <td className="px-6 py-4 text-center">{service.slump}</td>
+                  <td className="px-2 py-4 text-center">{service.Mutu_K}</td>
+                  <td className="px-2 py-4 text-center">{service.Mutu_FC}</td>
+                  <td className="px-2 py-4 text-center">{service.slump}</td>
                 </tr>
               ))}
             </tbody>

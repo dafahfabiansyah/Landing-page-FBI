@@ -21,11 +21,17 @@ export const PortfolioData = [
         description : 'pembangunan cluster jakarta selatan',
         image: Cluster
     },
-    // {
-    //     id: 4,
-    //     name: '4',
-    //     description : 'descripstion here',
-    //     image: 'https://via.placeholder.com/50'
-    // },
+    {
+        id: 4,
+        name: 'ariandri hotel and resort',
+        description : 'pembangunan ariandri hotel and resort',
+        image: ''
+    },
+    {
+        id: 5,
+        name: 'rumah tinggal pancamarya',
+        description : 'pembangunan rumah tinggal pancamarya',
+        image: ''
+    },
     
 ] as const;

@@ -5,6 +5,9 @@ const nextConfig = {
           {
             hostname: 'source.unsplash.com',
           },
+          {
+            hostname: 'via.placeholder.com',
+          },
         ]
     }
 };
