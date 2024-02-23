@@ -1,5 +1,5 @@
 "use client"
-import { FacebookLogo, InstagramLogo, LinkedinLogo, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo, LinkedinLogo, Storefront, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
 import React, { ReactNode } from 'react';
 import Image from "next/image";
 import Link from "next/link";
@@ -67,6 +67,9 @@ const Footer = () => {
               </Link>
               <Link href="https://www.instagram.com/freshbeton_indonesia/" target="_blank">
               <InstagramLogo size={32} className="hover:bg-[#405DE6] hover:text-white rounded-md transition-all"/>
+              </Link>
+              <Link href="https://www.tokopedia.com/freshbeton" target="_blank">
+              <Storefront size={32} className="hover:bg-green-500 hover:text-white rounded-md transition-all"/>
               </Link>
               {/* <YoutubeLogo size={32} className="hover:text-white rounded-md hover:bg-red-500 transition-all" />
               <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-[#0e76a8] transition-all"/> */}
