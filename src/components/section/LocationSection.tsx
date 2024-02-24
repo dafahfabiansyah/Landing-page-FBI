@@ -8,7 +8,7 @@ const LocationSection = () => {
     const limitedLocationData = LocationData.slice(0, 3);
 
     return (
-        <section className='bg-[#FAF5EF] py-2 pb-10'>
+        <section className='bg-[#FAF5EF] py-4 pb-10 pt-4 border-t border-b border-gray-200'>
         {/* <section className='bg-white py-2 pb-10'> */}
         <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>lokasi kami</h1>
         <p className='text-center text-black text-xl pb-2 font-bold capitalize'>berikut ini adalah lokasi dari perusahaan kami</p>

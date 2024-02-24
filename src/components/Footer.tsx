@@ -51,9 +51,9 @@ const Footer = () => {
         </div>
         <LinkGroup header="Company">
           <NavLink link="/#" label="PT Farrasindo Perkasa" />
-          <NavLink link="/#" label="PT Fresh Beton Indonesia" />
+          {/* <NavLink link="/#" label="PT Fresh Beton Indonesia" /> */}
           <NavLink link="/#" label="PT Citi Crane" />
-          <NavLink link="/#" label="Simi" />
+          <NavLink link="/#" label="Gunung Bumi Perkasa" />
         </LinkGroup>
         
         <div className="w-full px-4 sm:w-1/2 lg:w-3/12">

@@ -9,7 +9,7 @@ const ProductSection = () => {
 
     return (
     //    <section className='bg-white block pb-10'>
-       <section className='bg-[#FAF5EF] block pb-10'>
+       <section className='bg-[#FAF5EF] block pb-10 pt-3 border-t border-b border-gray-200'>
         <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>produk kami</h1>
          <p className='text-center text-black text-xl pb-2 font-bold capitalize'>berikut ini adalah produk dari perusahaan kami</p>
          <div className='gap-6 flex flex-wrap justify-center'>

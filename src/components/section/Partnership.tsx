@@ -17,19 +17,19 @@ const Partnership = () => {
    {/* <div>
    <CarouselPartner/>
    </div> */}
-    <div className="flex justify-center h-96">
-  <div className="list-none overflow-x-auto overflow-y-hidden flex">
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={PartnerImage1}/>
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={PartnerImage2}/>
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={PartnerImage3}/>
-    {/* <Image alt='gataua' width={500} height={200} className="block h-full" src={cimory}/> */}
-    {/* <Image alt='gataua' width={200} height={200} className="block h-full" src={tamanSafari}/> */}
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={MRT}/>
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={MRT}/>
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={MRT}/>
-    <Image alt='gataua' width={200} height={200} className="block h-full" src={MRT}/>
-  </div>
-</div>
+    <div className="flex justify-center h-auto overflow-hidden">
+      <div className="partner-container">
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage1}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage2}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage3}/>
+        {/* <Image alt='gataua' width={500} height={200} className="block h-20 partner-item" src={cimory}/> */}
+        {/* <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={tamanSafari}/> */}
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+      </div>
+    </div>
    </section>
   )
 }

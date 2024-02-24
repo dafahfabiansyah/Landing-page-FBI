@@ -17,15 +17,15 @@ const Page = ({ params }: { params: PageParams }) => {
       <div>
         <Header/>
         {/* Displaying the 'id' value */}
-        <div className='pt-2 pb-5'>
-        <div>ID: {id}</div>
+        <div className='pb-5 container pt-20'>
+        {/* <div>ID: {id}</div> */}
         {/* Access product data using the parsed id */}
-        <div>nama: {PortfolioData[portfolioId - 1].name}</div>
+        <h1 className='text-3xl font-bold mb-4'>{PortfolioData[portfolioId - 1].name}</h1>
         {/* Use the parsed id to access the image */}
-        <div className='flex items-center justify-center justify-items-center'>
-        <Image src={PortfolioData[portfolioId - 1].image} alt={PortfolioData[portfolioId- 1].name} />
-        </div>
-        <div>deskripsi: {PortfolioData[portfolioId - 1].description}</div>
+        <div className='flex items-center justify-center'>
+            <Image src={PortfolioData[portfolioId - 1].image} alt={PortfolioData[portfolioId - 1].name} width={400} height={300} />
+          </div>
+        <div className='capitalize'>{PortfolioData[portfolioId - 1].description}</div>
         </div>
         <Footer/>
       </div>

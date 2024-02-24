@@ -33,7 +33,7 @@ const Page = () => {
   return (
     <section>
       <Header />
-      <div className='flex pt-10 pb-4 w-screen flex-row items-center justify-center'>
+      <div className='flex pt-20 pb-4 w-screen flex-row items-center justify-center'>
         <form onSubmit={handleSubmit} className="w-1/2">
           <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
