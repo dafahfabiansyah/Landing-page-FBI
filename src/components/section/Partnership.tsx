@@ -13,12 +13,21 @@ import Image from 'next/image'
 const Partnership = () => {
   return (
    <section className='py-2 bg-[#FAF5EF]'>
-     <div className='text-4xl font-bold text-orange-600 text-center capitalize pb-1'>Partnership</div>
+     <div className='text-4xl font-bold text-orange-600 text-center capitalize pb-1'>Who we work with</div>
    {/* <div>
    <CarouselPartner/>
    </div> */}
     <div className="flex justify-center h-auto overflow-hidden">
       <div className="partner-container">
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage1}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage2}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage3}/>
+        {/* <Image alt='gataua' width={500} height={200} className="block h-20 partner-item" src={cimory}/> */}
+        {/* <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={tamanSafari}/> */}
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
+        <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={MRT}/>
         <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage1}/>
         <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage2}/>
         <Image alt='gataua' width={200} height={200} className="block h-20 partner-item" src={PartnerImage3}/>
