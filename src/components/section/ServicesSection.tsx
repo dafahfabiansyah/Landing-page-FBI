@@ -6,17 +6,18 @@ import { ServicesData } from '@/data/ServicesData';
 
 const ServicesSection = () => {
   return (
-    <section className='bg-[#FAF5EF] border-t border-b py-20 border-gray-200'>
-      <h1 className='text-4xl font-bold pb-2 text-orange-600 text-center capitalize'>mutu dan pelayanan</h1>
+    // <section className='bg-[#FAF5EF] border-t border-b py-20 border-gray-200'>
+    <section className='bg-white border-t border-b py-20 border-gray-200'>
+      <h1 className='text-4xl font-bold pb-2 text-green-600 text-center capitalize'>mutu dan pelayanan</h1>
       <p className='text-center text-black text-xl pb-5 font-bold capitalize'>berikut ini adalah kualitas dan mutu dari produk kami</p>
       <div className="flex flex-col h-80 mx-10">
         <div className="flex-grow overflow-auto">
           <table className="relative w-full border">
             <thead>
               <tr>
-                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu Beton K (kg/cm2)</th>
+                <th className="sticky top-0 px-6 py-3 text-white rounded-tl-md bg-[#2E2E2E]">Mutu Beton K (kg/cm2)</th>
                 <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu Beton FC (Mpa)</th>
-                <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Perkiraan Kuat Tekan</th>
+                <th className="sticky top-0 px-6 py-3 text-white rounded-tr-md bg-[#2E2E2E]">Perkiraan Kuat Tekan</th>
               </tr>
             </thead>
             <tbody>

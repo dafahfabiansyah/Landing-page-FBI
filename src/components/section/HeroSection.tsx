@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section className="relative pb-12 h-screen" style={{ backgroundImage: `url('/home banner (1).png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-10 flex items-center justify-start pl-10">
           <div className="p-6 rounded-md font-thin max-w-xl">
-            <p className="text-4xl text-[#12372A] mt-4 backdrop-blur-md p-2 rounded-xl">
+            <p className="text-4xl text-[#2E2E2E] mt-4 backdrop-blur-md p-2 rounded-xl">
               Bangunan yang kokoh <br/> berasal dari bahan berkualitas
             </p>
           </div>

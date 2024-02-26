@@ -7,8 +7,9 @@ const TestimonialsSection = () => {
    <section>
     
 <div className="min-w-screen bg-[#FAF5EF] min-h-screen flex items-center justify-center py-5">
-    <div className="w-full bg-white border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800">
-    <h1 className='text-center text-orange-600 pb-4 text-4xl font-bold capitalize'>testimoni</h1>
+    {/* <div className="w-full bg-[#FAF5EF] border-t border-b border-gray-200 px-5 py-16 md:py-24 text-gray-800"> */}
+    <div className="w-full bg-[#FAF5EF] px-5 py-16 md:py-24 text-gray-800">
+    <h1 className='text-center text-green-600 pb-4 text-4xl font-bold capitalize'>testimoni</h1>
        <div className="w-full max-w-6xl mx-auto">
             <div className="-mx-3 md:flex items-start">
                 <div className="px-3 md:w-1/3">
@@ -50,7 +51,7 @@ const TestimonialsSection = () => {
                             </div>
                         </div>
                         <div className="w-full">
-                            <p className="text-sm leading-tight"><span className="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span className="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                            <p className="text-sm leading-tight"><span className="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span className="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                         </div>
                     </div>
                     <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
