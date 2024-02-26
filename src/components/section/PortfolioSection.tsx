@@ -10,7 +10,7 @@ const PortfolioSection = () => {
     return (
         // <section className='bg-white pb-10'>
         // <section className='bg-[#FAF5EF] py-10 pb-20 pl-24 container '>
-        <section className='bg-white border-b py-10 pb-20 pl-24 container '>
+        <section className='bg-white border-b py-10 pl-24 container '>
         <h1 className='text-center text-green-600 pb-7 text-4xl font-bold capitalize'>portofolio</h1>
     <div className='flex flex-row'>
         <div className='flex flex-col'>

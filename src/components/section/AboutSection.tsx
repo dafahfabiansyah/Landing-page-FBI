@@ -25,7 +25,7 @@ const AboutSection = () => {
 
   return (
       // <section className='bg-[#FAF5EF] pt-10 items-center justify-center pb-10 container'>
-      <section className='bg-white pt-10 items-center justify-center pb-10 container'>
+      <section className='bg-white py-10 items-center justify-center container'>
         <h1 className='font-bold text-center text-green-600 text-4xl py-3'>Tentang Kami</h1>
         <div className='flex flex-col gap-10 pr-5 md:flex-row'>
           <Image src='https://source.unsplash.com/precast' width={300} height={150} alt='about us image' />
