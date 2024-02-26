@@ -12,7 +12,7 @@ const PortfolioSection = () => {
         // <section className='bg-[#FAF5EF] py-10 pb-20 pl-24 container '>
         <section className='bg-white border-b py-10 pl-24 container '>
         <h1 className='text-center text-green-600 pb-7 text-4xl font-bold capitalize'>portofolio</h1>
-    <div className='flex flex-row'>
+    <div className='flex md:flex-row flex-col'>
         <div className='flex flex-col'>
         <p className='text-black text-lg pb-2 font-bold capitalize w-60'>memberikan produk terbaik untuk anda yang ingin membangun dan menciptakan proyek yang akan menningkatkan kualitas perusahaan anda.</p>
         <div className='text-center mt-4'>
