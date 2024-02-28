@@ -26,7 +26,7 @@ const Card = ({ product }: { product: typeof ProductData[number] }) => {
             <div className="p-4">
                 <h1 className='capitalize text-black text-xl font-semibold mb-2'>{product.name}</h1>
                 <p className='text-black mb-4 truncate'>{product.description}</p>
-                <button onClick={navigateToDetail} className='bg-blue-500 hover:bg-blue-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>Details</button>
+                <button onClick={navigateToDetail} className='bg-green-500 hover:bg-green-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>Details</button>
             </div>
         </div>
     );

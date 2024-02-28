@@ -26,10 +26,10 @@ const Card = ({ location }: { location: typeof LocationData[number] }) => {
                     className="transition duration-500 hover:scale-110"
                 />
             </div>
-            <div className="p-4">
+            <div className="p-4 text-center">
                 <h1 className='capitalize text-black text-xl font-semibold mb-2'>{location.title}</h1>
-                <p className='text-black mb-4'>{location.address}</p>
-                <button onClick={navigateToDetail} className='bg-blue-500 hover:bg-blue-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>Details</button>
+                {/* <p className='text-black mb-4'>{location.address}</p> */}
+                <button onClick={navigateToDetail} className='bg-green-500 hover:bg-green-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>Details</button>
             </div>
         </div>
     );

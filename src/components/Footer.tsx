@@ -23,32 +23,14 @@ const Footer = () => {
     <footer className="bg-[#2E2E2E] text-white pt-10 flex z-10 items-center place-items-center gap-4 justify-between mx-auto">
     <div className="container">
       <div className="-mx-4 flex flex-wrap justify-center"> {/* Modifikasi di sini */}
-        <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
+        {/* <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
           <div className="mb-10 w-full">
-            {/* <a href="https://freshbetonindonesia.vercel.app/" target="_blank" className="mb-6 inline-block max-w-[160px]">
-              <Image
-                src={IconFbi}
-                alt="logo"
-                className="max-full"
-              />
-            </a> */}
-            {/* <p className="mb-7 text-base text-body-color dark:text-dark-6">
-              Sed ut perspiciatis undmnis is iste natus error sit amet
-              voluptatem totam rem aperiam.
-            </p> */}
             <GoogleMaps location={{
               lat: 0,
               lng: 0
             }}/>
-           
-            {/* <p className="flex items-center text-sm font-medium text-dark dark:text-white">
-              <span className="mr-3 text-primary">
-                <PhoneCall size={32} />
-              </span>
-              <span>+62 815 7474 7474 </span>
-            </p> */}
           </div>
-        </div>
+        </div> */}
         <LinkGroup header="Company">
           <NavLink link="/#" label="PT Farrasindo Perkasa" />
           {/* <NavLink link="/#" label="PT Fresh Beton Indonesia" /> */}
@@ -92,6 +74,14 @@ const Footer = () => {
             <p className="text-base text-body-color dark:text-dark-6 capitalize">
               &copy; {getCurrentDate()} fresh beton indonesia
             </p>
+          </div>
+        </div>
+        <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
+          <div className="mb-10 w-full">
+            <GoogleMaps location={{
+              lat: 0,
+              lng: 0
+            }}/>
           </div>
         </div>
       </div>

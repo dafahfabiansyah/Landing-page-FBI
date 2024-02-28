@@ -27,11 +27,11 @@ const Partnership = () => {
     // <section className='py-2 bg-[#FAF5EF]'>
     <section className='py-2 bg-white border-t'>
       <div className='text-3xl font-bold text-green-600 text-center py-2'>Dengan siapa kami bekerja</div>
-      <div className="marquee-container ">
+      <div className="marquee-container">
         <div className='flex flex-row'>
           {/* <p className='capitalize p-10 bg-[#FAF5EF] z-50'>Partner kami</p> */}
           {/* <p className='p-10 bg-[#FAF5EF] text-green-500 z-50 font-bold w-72 capitalize text-3xl'>20+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span> </p> */}
-          <p className='p-10 bg-white text-green-500 z-50 font-bold w-72 capitalize text-3xl'>20+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span> </p>
+          <p className='p-10 bg-white text-green-500 z-50 font-bold w-72 capitalize text-3xl'>100+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span> </p>
           {/* <p className='capitalize p-10 bg-[#FAF5EF] text-blue-500 z-50'>project partner</p> */}
         <div className="marquee">
           {showImages && (

@@ -77,7 +77,7 @@
   
   .marquee img {
     display: inline-block;
-    padding: 0 20px; /* optional, adjust as needed */
+    /* padding: 0 20px; */
   }
   
   @keyframes marquee {
