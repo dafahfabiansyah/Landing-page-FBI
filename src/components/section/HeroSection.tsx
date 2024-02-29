@@ -1,15 +1,11 @@
 import React from 'react';
-import homeBanner from '../../../public/home banner.png'; // Used as background image
-import CarouselHero from '../ui/Carousel';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const HeroSection = () => {
   return (
-    <section className="relative pb-12 h-screen" style={{ backgroundImage: `url('/home banner (1).png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-10 flex items-center justify-start pl-10">
+    <section className="relative pb-12 h-[580px]" style={{ backgroundImage: `url('/home banner (1).png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="absolute inset-10 flex items-end justify-end pr-10">
           <div className="p-6 rounded-md font-thin max-w-xl">
-            <p className="text-4xl text-[#2E2E2E] mt-4 backdrop-blur-md p-2 rounded-xl">
+            <p className="md:text-4xl text-xl text-gray-900 bg-gray-400 rounded-md bg-clip-padding backdrop-filter mt-4 text-end p-2 bg-opacity-25">
               Bangunan yang kokoh <br/> berasal dari bahan berkualitas
             </p>
           </div>

@@ -44,8 +44,8 @@ const AboutSection = () => {
           <ul className='flex flex-col md:flex-row gap-52'>
             {counters.map((counter, index) => (
               <div key={index} className='flex flex-col items-center justify-center h-40 w-56'>
-                <p className='transition-all text-4xl font-bold text-black'>{counter.current}+ {index === 1 ? "" : (index === 0 ? "" : "")}</p>
-                <li className='text-xl'>{counter.name}</li>
+                <p className='transition-all text-4xl font-bold text-white'>{counter.current}+ {index === 1 ? "" : (index === 0 ? "" : "")}</p>
+                <li className='text-xl text-white'>{counter.name}</li>
               </div>
             ))}
           </ul>

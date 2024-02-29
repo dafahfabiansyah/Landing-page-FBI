@@ -16,7 +16,7 @@ const Card = ({ location }: { location: typeof LocationData[number] }) => {
     };
 
     return (
-        <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-md w-80 m-2">
+        <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-xl w-80 m-2">
             <div onClick={redirectToUrl} className="cursor-pointer h-40 relative">
                 <Image
                     src={location.image}
@@ -25,6 +25,7 @@ const Card = ({ location }: { location: typeof LocationData[number] }) => {
                     objectFit="cover"
                     className="transition duration-500 hover:scale-110"
                 />
+                <p className='absolute bottom-2 right-2 bg-green-500 text-white px-2 rounded-sm'>{location.id}</p>
             </div>
             <div className="p-4 text-center">
                 <h1 className='capitalize text-black text-xl font-semibold mb-2'>{location.title}</h1>

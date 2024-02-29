@@ -15,7 +15,7 @@ const ServicesSection = () => {
           <table className="relative w-full border">
             <thead>
               <tr>
-                <th className="sticky top-0 px-6 py-3 text-white rounded-tl-md bg-[#2E2E2E]">Mutu Beton K (kg/cm2)</th>
+                <th className="sticky top-0 px-6 py-3 text-white rounded-tl-md bg-[#2E2E2E]">Mutu Beton K (Kg/Cm²)</th>
                 <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Mutu Beton FC (Mpa)</th>
                 <th className="sticky top-0 px-6 py-3 text-white bg-[#2E2E2E]">Slump</th>
                 <th className="sticky top-0 px-6 py-3 text-white rounded-tr-md bg-[#2E2E2E]">Perkiraan Kuat Tekan</th>
