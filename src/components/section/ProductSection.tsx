@@ -1,22 +1,14 @@
 "use client"
 
 import React from 'react';
-import Card from '../ui/card';
-import { ProductData } from '@/data/ProductData';
 import Link from 'next/link';
 import batchingImage from '../../../public/concrete-mixer-concrete-svgrepo-com.png';
 import precastImage from '../../../public/concrete.png';
 import concreteImage from '../../../public/ICON BATCHPUMP.png';
 import pumpImage from '../../../public/ICON concrete pump.png';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
-const ProductSection = ({ product }: { product: typeof ProductData[number] }) => {
-    const router = useRouter();
-
-    const navigateToDetail = () => {
-        router.push(`/product/category/${product.id}`);
-    };
+const ProductSection = () => {
     return (
         <section className='bg-[#FAF5EF] py-10 border-t border-b border-gray-200'>
             <h1 className='text-center text-green-600 text-4xl font-bold capitalize'>produk kami</h1>
