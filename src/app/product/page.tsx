@@ -13,11 +13,6 @@ const Page = () => {
     <div>
       <Header />
       <section className='overflow-x-hidden pt-20 pb-2 flex flex-col items-center justify-items-center justify-center'>
-      <div className='text-center mx-44'>
-        {/* <p className='font-bold text-green-500 text-3xl capitalize pb-6'>Produk Kami</p> */}
-        {/* <div className="relative h-[400px] w-screen" style={{ backgroundImage: `url('/IMG_8274.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
-        <div className="h-[580px] w-screen" style={{ backgroundImage: `url('/IMG_8274.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-      </div>
       <div className='w-screen my-10'>
         <h1 className='font-bold text-center text-green-500 text-3xl capitalize'>tabel kualitas</h1>
         <p className='capitalize text-justify mx-10 py-4'><span className='font-bold'>PT. Fresh Beton Indonesia</span> adalah perusahaan swasta nasional yang bergerak di bidang beton siap pakai. Didirikan sejak tahun 2017, kami telah dipercaya oleh kontraktor Nasional, BUMN dan kontraktor internasional karena mampu memasok 

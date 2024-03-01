@@ -11,7 +11,7 @@ export const PortfolioData = [
     },
     {
         id: 2,
-        name: 'cimmory dairyland',
+        name: 'cimory dairyland',
         description : 'pembangunan cimmory dairyland',
         image: Cimmory
     },
