@@ -89,4 +89,51 @@
     }
   }
   
+  .bg-image {
+    background-image: url('../../public/DJI_0893.png'); /* Ganti link_gambar.jpg dengan URL gambar yang Anda inginkan */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Gambar tetap saat digulir */
+    height:60vh; /* Sesuaikan tinggi dengan kebutuhan Anda */
+    width: 100%; /* Gunakan lebar penuh */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ubah opasitas latar belakang di sini */
+  }
+  
+  .scroll-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Animasi */
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .scroll-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: scroll 10s linear infinite; /* Ubah kecepatan dan jenis animasi di sini */
+  }
   

@@ -15,25 +15,25 @@ const ProductSection = () => {
             <div className='flex justify-center'>
             <div className='flex flex-row gap-16 w-[700px] items-center'>
         <div className="bottom-1 w-40 h-40">
-            <Link href='product/category/batching-plant'>
+            <Link href='product'>
             <Image src={batchingImage} alt='batching plant'  className='transition-all hover:scale-125' />
             <p className='text-center pt-2 capitalize'>batching plant</p>
             </Link>   
         </div>
         <div className="bottom-1 w-40 h-40">
-        <Link href='product/category/concrete-pump'>
+        <Link href='product'>
             <Image src={concreteImage} alt='concrete pump' className='transition-all hover:scale-125' />
             <p className='text-center pt-2 capitalize'>concrete pump</p>
             </Link>
         </div>
         <div className="bottom-1 w-32 h-32"> 
-        <Link href='product/category/precast'>
+        <Link href='product'>
             <Image src={precastImage} alt='precast' className='transition-all hover:scale-125 pb-2'/>
             <p className='text-center pt-2 capitalize'>precast</p>
             </Link>
         </div>
         <div className="bottom-1 w-40 h-40">
-        <Link href='product/category/mobile-batching'>
+        <Link href='product'>
             <Image src={pumpImage} alt='mobile batching' className='transition-all hover:scale-125' />
             <p className='text-center pt-2 capitalize'>mobile batching</p>
             </Link>

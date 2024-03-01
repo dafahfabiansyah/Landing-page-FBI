@@ -3,10 +3,7 @@ import coverUditch from '../../public/harga-tutup-uditch-.png';
 import roadBarrier from '../../public/road barrier.png';
 import uDitch from '../../public/u ditch.jpg';
 import pagarPanel from '../../public/pagar panel.png';
-import batchingImage from '../../../public/concrete-mixer-concrete-svgrepo-com.png';
-import precastImage from '../../../public/concrete.png';
-import concreteImage from '../../../public/ICON BATCHPUMP.png';
-import pumpImage from '../../../public/ICON concrete pump.png';
+
 
 export const ProductData = [
     {

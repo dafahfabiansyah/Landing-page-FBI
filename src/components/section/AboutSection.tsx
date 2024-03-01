@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import aboutImage from '../../../public/IMG_8931.png'
 
 const AboutSection = () => {
   const [counters, setCounters] = useState([
@@ -18,7 +19,7 @@ const AboutSection = () => {
         current: counter.current < counter.max ? counter.current + counter.increaseFactor : counter.current
       }));
       setCounters(updatedCounters);
-    }, 9);
+    }, 150);
 
     return () => clearInterval(interval);
   }, [counters]);
@@ -28,7 +29,7 @@ const AboutSection = () => {
       <section className='bg-white py-10 items-center justify-center '>
         <h1 className='font-bold text-center text-green-600 text-4xl py-3'>Tentang Kami</h1>
         <div className='flex flex-col gap-10 pr-5 md:flex-row container'>
-          <Image src='https://source.unsplash.com/precast' width={300} height={150} alt='about us image' />
+          <Image src={aboutImage} width={300} height={150} alt='about us image' />
           <p className='text-justify'><span className='font-bold'>PT. Fresh Beton Indonesia</span> merupakan perusahaan yang bergerak di bidang beton siap pakai (readymix) dan beton pracetak (precast). <br/>
             Fresh Beton Readymix berdiri mulai Maret 2018 dengan mendirikan Permanen Batching Plant di neglasari, Sukabumi. Di dalam 1 area yang sama dengan Quary dan Crusher <span className='hover:underline hover:text-green-800'><Link href="https://gbp-quarry.com/">PT.GBP</Link></span>. Kapasitas batching plant terpasang 60 m3/jam dengan jumlah Armada Truck Mixer 15 unit Kapasitas 7 m3 dan 5 unit Truck minimix.</p>
         </div>
@@ -38,10 +39,9 @@ const AboutSection = () => {
             dengan pertimbangan quality dan efisien untuk lingkup pekerjaan
           </p>
         </div>
-        {/* <div className='pl-5 pt-5 md:pl-72' data-aos="fade-up"> */}
-        <div className='bg-green-600 border-4 justify-center items-center flex'>
-        <div className='py-5' data-aos="fade">
-          <ul className='flex flex-col md:flex-row gap-52'>
+        <div className='border-4 justify-center items-center bg-image flex'>
+        <div className='py-5'>
+          <ul className='flex scroll-content flex-col md:flex-row gap-52'>
             {counters.map((counter, index) => (
               <div key={index} className='flex flex-col items-center justify-center h-40 w-56'>
                 <p className='transition-all text-4xl font-bold text-white'>{counter.current}+ {index === 1 ? "" : (index === 0 ? "" : "")}</p>
