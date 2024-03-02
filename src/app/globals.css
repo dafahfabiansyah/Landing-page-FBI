@@ -67,14 +67,20 @@
     }
   }
   
-  .marquee {
+  /* .marquee {
     width: 100%;
-    /* overflow: hidden; */
     white-space: nowrap;
     animation: marquee 20s linear infinite;
     display: flex;
-  }
+  } */
   
+  
+.marquee {
+  white-space: nowrap;
+  display: block;
+  animation: marquee 20s linear infinite;
+}
+
   .marquee img {
     display: inline-block;
     /* padding: 0 20px; */
