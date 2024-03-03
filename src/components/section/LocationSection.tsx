@@ -1,8 +1,9 @@
 "use client"
-import React from 'react'
+import React, { Suspense } from 'react'
 import Link from 'next/link';
 import Card from '../ui/cardLocation';
 import { LocationData } from '@/data/LocationData';
+import Skeleton from '../ui/Skeleton';
 
 const LocationSection = () => {
     const limitedLocationData = LocationData.slice(0, 7);
@@ -13,14 +14,11 @@ const LocationSection = () => {
         {/* <p className='text-center text-black text-lg pb-2 font-bold capitalize'>berikut ini adalah lokasi dari perusahaan kami</p> */}
          <div className='gap-6 flex flex-wrap justify-center'>
             {limitedLocationData.map(location => (
-                <Card key={location.id} location={location} />
+                <Suspense fallback={<Skeleton/>}>
+                    <Card key={location.id} location={location} />
+                </Suspense>
             ))}
         </div>
-        {/* <div className='text-center mt-2'>
-            <Link href='/location'>
-                <button className='text-white rounded-md p-2 bg-green-500 hover:bg-green-600 transition-all'>View All</button>
-            </Link>
-        </div> */}
        </section>
     )
       
