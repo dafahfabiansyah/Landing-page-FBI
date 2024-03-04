@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import { Suspense } from 'react';
+import Loading from './loading';
 import Header from '@/components/Header';
 import HeroSection from '@/components/section/HeroSection';
 import ProductSection from '@/components/section/ProductSection';
@@ -15,6 +16,7 @@ import LocationSection from '@/components/section/LocationSection';
 export default function Home() {
   return (
     <>
+      <Suspense fallback={<p>loading feed....</p>}>
       <Header />
       <HeroSection />
       <AboutSection/>
@@ -26,6 +28,7 @@ export default function Home() {
       <Partnership/>
       <FloatingIcon/>
       <Footer/>
+      </Suspense>
     </>
   );
 }

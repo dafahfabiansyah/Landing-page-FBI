@@ -7,9 +7,9 @@ import aboutImage from '../../../public/IMG_8931.png'
 
 const AboutSection = () => {
   const [counters, setCounters] = useState([
-    { name: 'Customer', current: 0, max: 100, increaseFactor: 1 },
-    { name: 'Pengalaman', current: 0, max: 20, increaseFactor: 0.5 },
-    { name: 'Proyek', current: 0, max: 100, increaseFactor: 2 },
+    { name: 'Customer', current: 0, max: 100, increaseFactor: 4 },
+    { name: 'Pengalaman', current: 0, max: 20, increaseFactor: 4 },
+    { name: 'Proyek', current: 0, max: 100, increaseFactor: 4 },
   ]);
 
   useEffect(() => {
