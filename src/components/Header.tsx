@@ -39,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <div className='sticky top-0 z-50'>
+    <div id='google_translate_element' className='sticky top-0 z-50'>
       <div className={`fixed inset-0 bg-white z-50 overflow-hidden transition-transform duration-300 
         ${isMobileSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
 
@@ -78,12 +78,12 @@ const Header = () => {
         </div>
         
         <nav className="hidden lg:flex space-x-4 gap-4 uppercase">
-          <NavLink href="/" active={activePage === '/'}>Home</NavLink>
-          <NavLink href="/about" active={activePage === '/about'}>About us</NavLink>
-          <NavLink href="/product" active={activePage === '/product'}>Product</NavLink>
+          <NavLink href="/" active={activePage === '/'}>beranda</NavLink>
+          <NavLink href="/about" active={activePage === '/about'}>tentang kami</NavLink>
+          <NavLink href="/product" active={activePage === '/product'}>produk</NavLink>
           <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portofolio</NavLink>
-          <NavLink href="/news" active={activePage === '/news'}>Article</NavLink>
-          <NavLink href="/contact" active={activePage === '/contact'}>Contact Us</NavLink>
+          <NavLink href="/news" active={activePage === '/news'}>artikel</NavLink>
+          <NavLink href="/contact" active={activePage === '/contact'}>kontak kami</NavLink>
         </nav>
 
         <button className="hidden lg:block text-black hover:text-[#1BB441]">

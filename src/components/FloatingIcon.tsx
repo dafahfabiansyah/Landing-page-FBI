@@ -22,7 +22,7 @@ function FloatingIcon() {
               href="https://www.tokopedia.com/freshbeton"
               target="_blank"
               rel="noopener noreferrer"
-              className="block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded transition-all hover:scale-125"
+              className="animate-bounce hover:animate-none block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded transition-all hover:scale-125"
             >
               <Image
                 src={tokopediIcon}
@@ -35,7 +35,7 @@ function FloatingIcon() {
               href="https://api.whatsapp.com/send?phone=6281575453564&text=Halo,%20PT%20FRESH%20BETON%20INDONESIA,%20Saya%20mendapatkan%20informasi%20ini%20dari%20website,%20dan%20ada%20yang%20mau%20saya%20tanyakan?"
               target="_blank"
               rel="noopener noreferrer"
-              className="block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded transition-all hover:scale-125"
+              className="animate-bounce hover:animate-none block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded transition-all hover:scale-125"
             >
               <Image
                 src={whatsappIcon}
