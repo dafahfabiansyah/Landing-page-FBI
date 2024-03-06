@@ -34,6 +34,7 @@ import React from 'react';
 import { ArticleData } from '@/data/ArticlesData';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import { ArrowUpRight } from '@phosphor-icons/react';
 // import { CaretRight } from '@phosphor-icons/react';
 
 const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
@@ -56,10 +57,13 @@ const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
                 />
                  {/* <p className='absolute bottom-2 right-2 backdrop-blur-sm text-white px-2 rounded-sm'>{portfolio.id}</p> */}
             </div>
-            <div className="flex flex-col justify-between text-center p-4 w-full">
+            <div className="flex flex-col justify-between p-4 w-full">
                 <div>
-                    <h1 className='truncate capitalize text-black text-xl font-semibold mb-2'>{article.content}</h1>
-                    <p className='truncate capitalize text-black mb-1'>{article.content}</p>
+                    <div className='flex flex-row justify-between'>
+                    <h1 className='truncate capitalize text-black text-xl font-semibold mb-2'>{article.title}</h1>
+                    <ArrowUpRight size={28} />
+                    </div>
+                    <p className='text-wrap capitalize text-black mb-1'>{article.content}</p>
                 </div>
             </div>
         </div>
