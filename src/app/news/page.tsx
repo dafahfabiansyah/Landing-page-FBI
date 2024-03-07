@@ -31,7 +31,7 @@ import Sidebar from '@/components/Sidebar'; // Import the Sidebar component
 
 const Page = () => {
   return (
-    <section>
+    <section className=' bg-[#FAF5EF]'>
       <Header />
       <div className="flex">
         <div className='pt-20'>
