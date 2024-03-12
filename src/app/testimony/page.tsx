@@ -1,6 +1,15 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { Metadata } from 'next';
 import React from 'react'
+
+export const metadata: Metadata = {
+    title: "Testimoni - Fresh Beton Indonesia",
+    description: "Halaman testimoni Fresh Beton Indonesia",
+    icons: {
+      icon : "./icon.ico",
+    }
+  };
 
 const page = () => {
   return (

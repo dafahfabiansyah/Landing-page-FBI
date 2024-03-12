@@ -11,7 +11,15 @@ import Partnership from '@/components/section/Partnership';
 import PortfolioSection from '@/components/section/PortfolioSection';
 import AboutSection from '@/components/section/AboutSection';
 import LocationSection from '@/components/section/LocationSection';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "Home - Fresh Beton Indonesia",
+  description: "Halaman utama Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
+};
 export default function Home() {
   return (
     <>

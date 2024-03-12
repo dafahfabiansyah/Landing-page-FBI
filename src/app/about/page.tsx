@@ -1,7 +1,8 @@
-"use client"
+// "use client"
 
 import React from 'react';
 import Image from 'next/image';
+import type { Metadata } from 'next'
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import aboutImage from '../../../public/IMG_5671.png';
@@ -9,6 +10,14 @@ import isoImage from '../../../public/ISO 14001, PT FBI_compressed (1)-1.png';
 import isoImage9001 from '../../../public/ISO 9001, PT FBI-1.png';
 import achievementImage from '../../../public/AWARDS AND ACHIEVEMENTS .png';
 import FloatingIcon from '@/components/FloatingIcon';
+
+export const metadata: Metadata = {
+  title: "About us - Fresh Beton Indonesia",
+  description: "Halaman tentang Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
+};
 
 const Page = () => {
   return (

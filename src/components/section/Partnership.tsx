@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import PartnershipData from '@/data/PartnershipData';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import CarouselPartner from '../ui/CarouselPartner';
 import Image from 'next/image';
 
 const Partnership = () => {

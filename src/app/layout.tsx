@@ -6,13 +6,13 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 
-export const metadata: Metadata = {
-  title: "Fresh Beton Indonesia",
-  description: "Demo website untuk Fresh Beton Indonesia",
-  icons: {
-    icon : "./icon.ico",
-  }
-};
+// export const metadata: Metadata = {
+//   title: "Fresh Beton Indonesia",
+//   description: "Demo website untuk Fresh Beton Indonesia",
+//   icons: {
+//     icon : "./icon.ico",
+//   }
+// };
 
 export default function RootLayout({
   children,

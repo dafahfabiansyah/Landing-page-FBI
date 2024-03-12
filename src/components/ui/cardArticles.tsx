@@ -1,41 +1,9 @@
-// import Image from 'next/image';
-// import React from 'react';
-
-// interface Article {
-//   id: number;
-//   title: string;
-//   content: string;
-// }
-
-// interface Props {
-//   articles: Article[];
-// }
-
-// const Card: React.FC<Props> = ({ articles }) => {
-//   return (
-//     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-//       {articles.map(article => (
-//         <div key={article.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
-//           <Image className="w-full h-40 object-cover" src="https://via.placeholder.com/400x200" alt={article.title} />
-//           <div className="p-4">
-//             <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
-//             <p className="text-gray-700">{article.content}</p>
-//           </div>
-//         </div>
-//       ))}
-//     </div>
-    
-//   );
-// };
-
-// export default Card;
-
+"use client"
 import React from 'react';
 import { ArticleData } from '@/data/ArticlesData';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { ArrowUpRight } from '@phosphor-icons/react';
-// import { CaretRight } from '@phosphor-icons/react';
+import { ArrowUpRight, UserCircle } from '@phosphor-icons/react';
 
 const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
     const router = useRouter();
@@ -44,29 +12,40 @@ const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
         router.push(`/news/detail/${article.id}`);
     };
 
+    // Fungsi untuk membatasi teks menjadi 100 karakter
+    const truncateContent = (content: string) => {
+        return content.length > 50 ? content.slice(0, 50) + "..." : content;
+    };
+
+    const truncateTitle = (title: string) => {
+        return title.length > 20 ? title.slice(0, 20) + "..." : title;
+    };
+
     return (
-        <div className="bg-white border-solid border-2 rounded-md shadow-md w-96">
-             <div className="cursor-pointer h-40 relative">
-                <Image
-                    src={article.image}
-                    alt={article.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="w-full transition duration-500 hover:scale-110 hover:z-30 rounded-t-md"
-                    onClick={navigateToDetail}
-                />
-                 {/* <p className='absolute bottom-2 right-2 backdrop-blur-sm text-white px-2 rounded-sm'>{portfolio.id}</p> */}
-            </div>
-            <div className="flex flex-col justify-between p-4 w-full">
-                <div>
-                    <div className='flex flex-row justify-between'>
-                    <h1 className='truncate capitalize text-black text-xl font-semibold mb-2'>{article.title}</h1>
-                    <ArrowUpRight size={28} />
-                    </div>
-                    <p className='text-wrap capitalize text-black mb-1'>{article.content}</p>
-                </div>
-            </div>
+    <section className="bg-white w-96 h-[400px] relative">
+        <Image
+            src={article.image}
+            alt={article.title}
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-96 transition duration-500 rounded-md cursor-pointer"
+            onClick={navigateToDetail}
+        />
+        <div className=" container absolute bottom-0 left-0 right-0 py-2 bg-transparent bg-opacity-50 text-white">
+            <ul className='flex flex-row justify-between'>
+                <li>
+                    <span className=" capitalize text-xs font-semibold mb-2">{article.createDate}</span>
+                </li>
+                <li className='flex flex-row gap-2'>
+                    <Image src='https://i.pravatar.cc/100?img=5' width={10} height={10} alt={article.authorName} className="rounded-full w-5 h-5"/>
+                    {/* <UserCircle size={34} className="rounded-full w-5 h-5"/> */}
+                    <span className=" capitalize text-xs font-semibold pt-1">{article.authorName}</span>
+                </li>
+            </ul>
+            <h1 className="w-80 capitalize text-lg font-semibold mb-2">{article.title}</h1>
+            {/* <p className="truncate capitalize text-sm mb-1">{truncateContent(article.content)}</p> */}
         </div>
+    </section>
     );
 };
 

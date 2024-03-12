@@ -7,7 +7,15 @@ import Footer from '@/components/Footer';
 import ServicesSection from '@/components/section/ServicesSection';
 import Image from 'next/image';
 import ServicesTable from '@/components/ServicesTable';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: "Product - Fresh Beton Indonesia",
+  description: "Halaman product Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
+};
 const Page = () => {
   return (
     <div>

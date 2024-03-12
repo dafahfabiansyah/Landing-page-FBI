@@ -4,6 +4,15 @@ import { PortfolioData } from '@/data/PortfolioData';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: `Location - ${PortfolioData[0].name}`,
+  description: "Halaman portfolio Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
+};
 interface PageParams {
     id: string; 
   }
