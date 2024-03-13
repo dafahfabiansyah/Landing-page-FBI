@@ -1,16 +1,26 @@
-"use client"
 import React from 'react';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Card from '@/components/ui/cardArticles';
 import { ArticleData } from '@/data/ArticlesData';
 import Sidebar from '@/components/Sidebar'; // Import the Sidebar component
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: "Article - Fresh Beton Indonesia",
+  description: "Halaman artikel Fresh Beton Indonesia",
+  icons: {
+    icon : "./icon.ico",
+  }
+};
 
 const Page = () => {
   return (
     <section>
       <Header />
-      <head>
+
+      {/* <head>
         <title>News - Fresh Beton Indonesia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/icon.ico" />
@@ -20,7 +30,7 @@ const Page = () => {
         <meta name="language" content="Indonesian" />
         <meta name="author" content="Fresh Beton Indonesia" />
         <meta name="keywords" content="Fresh Beton Indonesia" />
-      </head>
+      </head> */}
       <div className="flex">
         <div className='pt-20'>
         <Sidebar />

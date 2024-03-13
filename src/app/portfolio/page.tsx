@@ -27,8 +27,8 @@ const page = () => {
         <div className="relative mx-10 h-[400px] w-screen" style={{ backgroundImage: `url('/IMG_8274.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
       </div>
      </section>
-     <div className='gap-4 flex flex-wrap justify-center pb-5 pt-20 '>
-     <p className='font-bold text-lg capitalize pb-6 text-center mx-44'>Di halaman ini, Anda akan menemukan informasi lengkap tentang profil produk dan layanan yang kami tawarkan.</p>
+     <p className='font-bold text-lg capitalize pb-6 text-center py-20 mx-44'>Di halaman ini, Anda akan menemukan informasi lengkap tentang profil produk dan layanan yang kami tawarkan.</p>
+     <div  data-aos='fade-up' className='gap-4 flex flex-wrap justify-center pb-5  '>
         {PortfolioData.map(portfolio => (
             <Card key={portfolio.id} portfolio={portfolio} />
         ))}

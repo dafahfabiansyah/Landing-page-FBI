@@ -1,12 +1,21 @@
+"use client"
+
 import React, { useState } from 'react';
 import { MagnifyingGlass } from '@phosphor-icons/react';
 import { ArticleData } from '@/data/ArticlesData';
+import Link from 'next/link';
+
+interface Article {
+  id: number;
+  title: string;
+  content: string;
+}
 
 const Sidebar = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<Article[]>([]);
 
-  const handleSearchChange = (event:any) => {
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);
   };
 
@@ -17,15 +26,22 @@ const Sidebar = () => {
     setSearchResults(results);
   };
 
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  };
+
   return (
     <aside className="sidebar px-6 h-full">
       <div className="search-bar flex flex-row pt-20">
         <input
           type="text"
-          className="border border-gray-600"
+          className="border rounded-lg border-gray-600"
           placeholder="  Search..."
           value={searchTerm}
           onChange={handleSearchChange}
+          onKeyPress={handleKeyPress} // Menambahkan event handler untuk key press
         />
         <button className="pl-2" onClick={performSearch}>
           <MagnifyingGlass size={28} />
@@ -33,15 +49,17 @@ const Sidebar = () => {
       </div>
       <div className="categories">
         <ul className="capitalize flex flex-col gap-y-2 pt-2">
-          <li className="hover:bg-green-500 hover:text-white transition-all text-start p-1">
+          {/* <li className="hover:bg-green-500 hover:text-white transition-all text-start p-1">
             Lihat Semua
-          </li>
+          </li> */}
           {searchResults.map((result) => (
             <li
               key={result.id}
-              className=" hover:bg-green-500 hover:text-white transition-all p-1"
+              className="hover:bg-green-500 hover:text-white transition-all p-1"
             >
+              <Link href={`/news/detail/${result.id}`}>
               {result.title}
+              </Link>
             </li>
           ))}
         </ul>

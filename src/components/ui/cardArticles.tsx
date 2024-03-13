@@ -37,8 +37,8 @@ const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
                     <span className=" capitalize text-xs font-semibold mb-2">{article.createDate}</span>
                 </li>
                 <li className='flex flex-row gap-2'>
-                    <Image src='https://i.pravatar.cc/100?img=5' width={10} height={10} alt={article.authorName} className="rounded-full w-5 h-5"/>
-                    {/* <UserCircle size={34} className="rounded-full w-5 h-5"/> */}
+                    {/* <Image src='https://i.pravatar.cc/100?img=5' width={10} height={10} alt={article.authorName} className="rounded-full w-5 h-5"/> */}
+                    <UserCircle size={34} className="rounded-full w-5 h-5"/>
                     <span className=" capitalize text-xs font-semibold pt-1">{article.authorName}</span>
                 </li>
             </ul>

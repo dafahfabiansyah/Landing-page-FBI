@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { UserCircle } from '@phosphor-icons/react';
 
 export const metadata: Metadata = {
   title: `Article - ${ArticleData[0].title}`,
@@ -17,7 +18,6 @@ export const metadata: Metadata = {
 
 interface PageParams {
   id: string;
-  date: string;
 }
 // Define Page component
 const Page = ({ params }: { params: PageParams }) => {
@@ -30,7 +30,6 @@ const Page = ({ params }: { params: PageParams }) => {
       <Header />
       <div className='container mx-auto px-4 pt-20'>
         <div className='flex'>
-          
             {/* Main content */}
             <div className='pt-10 pb-5'>
               <span className='text-3xl capitalize flex font-bold mb-2 justify-center items-center'>{ArticleData[articleId - 1].title}</span>
@@ -40,8 +39,9 @@ const Page = ({ params }: { params: PageParams }) => {
                 </Link>
               <p className='flex flex-col text-gray-500 decoration-indigo-500'>{ArticleData[articleId - 1].createDate}</p>
               </div>
+                {/* <UserCircle size={34} /> */}
               <div className='flex items-center justify-center mb-4'>
-                <Image width={800} height={700} src={ArticleData[articleId - 1].image} alt={ArticleData[articleId - 1].title} />
+                <Image width={800} height={700} src={ArticleData[articleId - 1].image} alt={ArticleData[articleId - 1].title} />                
               </div>
               <article className='flex flex-col gap-5'>
                   <p className='text-lg mx-20 text-justify'>{ArticleData[articleId - 1].content}</p>
