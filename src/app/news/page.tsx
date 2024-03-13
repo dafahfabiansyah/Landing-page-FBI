@@ -19,20 +19,8 @@ const Page = () => {
   return (
     <section>
       <Header />
-
-      {/* <head>
-        <title>News - Fresh Beton Indonesia</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/icon.ico" />
-        <meta name="description" content="Halaman berita Fresh Beton Indonesia" />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="Indonesian" />
-        <meta name="author" content="Fresh Beton Indonesia" />
-        <meta name="keywords" content="Fresh Beton Indonesia" />
-      </head> */}
-      <div className="flex">
-        <div className='pt-20'>
+      <div className="sm:block flex flex-wrap">
+        <div className='pt-20 '> 
         <Sidebar />
         </div>
         <div className='gap-4 flex flex-wrap justify-center py-10 pt-20 '>

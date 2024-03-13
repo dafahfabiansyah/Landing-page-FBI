@@ -33,8 +33,8 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="sidebar px-6 h-full">
-      <div className="search-bar flex flex-row pt-20">
+    <aside className="pt-20 sidebar px-6 h-full">
+     <div className="search-bar flex flex-row">
         <input
           type="text"
           className="border rounded-lg border-gray-600"
@@ -47,15 +47,27 @@ const Sidebar = () => {
           <MagnifyingGlass size={28} />
         </button>
       </div>
+      <div>
+        {/* <h3 className="font-bold text-lg">Categories</h3> */}
+        <ul className="capitalize flex flex-row gap-y-2 pt-2">
+          {ArticleData.map((article) => (
+            <li
+              key={article.id}
+              className="bg-gray-100 hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
+            >
+              <Link href={`/news/category/${article.category}`}>
+              {article.category}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="categories">
         <ul className="capitalize flex flex-col gap-y-2 pt-2">
-          {/* <li className="hover:bg-green-500 hover:text-white transition-all text-start p-1">
-            Lihat Semua
-          </li> */}
           {searchResults.map((result) => (
             <li
               key={result.id}
-              className="hover:bg-green-500 hover:text-white transition-all p-1"
+              className="hover:bg-green-500 hover:text-white transition-all p-1 relative"
             >
               <Link href={`/news/detail/${result.id}`}>
               {result.title}
