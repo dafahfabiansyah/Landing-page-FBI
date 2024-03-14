@@ -64,4 +64,58 @@ export default [
         width:  200 ,
         height : 200,
     },
+    {
+        name: 'Taman Safari',
+        image: tamanSafari,
+        width:  150 ,
+        height : 150,
+    },
+    {
+        name: 'MRT Jakarta',
+        image: MRT,
+        width:  100 ,
+        height : 100,
+    },
+    {
+        name: 'Pertamina',
+        image: pertamina,
+        width:  200 ,
+        height : 200,
+    },
+    {
+        name: 'Summarecon',
+        image: summarecon,
+        width:  200,
+        height : 200,
+    },
+    {
+        name: 'PUPR',
+        image: PUPR,
+        width:  200 ,
+        height : 200,
+    },
+    {
+        name: 'Hermina',
+        image: hermina,
+        width:  100 ,
+        height : 100,
+    },
+    {
+        name: 'Waskita',
+        image: waskita,
+        width:  100,
+        height : 100,
+    },
+    {
+        name: 'Jaya Konstruksi',
+        image: jayaKonstruksi,
+        width:  100 ,
+        height : 100,
+    },
+    {
+        name: 'Cimory',
+        image: cimory,
+        width:  200 ,
+        height : 200,
+    },
 ]

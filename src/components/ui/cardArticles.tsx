@@ -27,8 +27,10 @@ const Card = ({ article }: {  article: typeof ArticleData[number] }) => {
             src={article.image}
             alt={article.title}
             layout="fill"
+            sizes='(100vw, 100vh)'
+            quality={100}
             objectFit="cover"
-            className="w-full h-96 transition duration-500 rounded-md cursor-pointer"
+            className="w-full f h-96 transition duration-500 rounded-md cursor-pointer"
             onClick={navigateToDetail}
         />
         <div className=" container absolute bottom-0 left-0 right-0 py-2 bg-transparent bg-opacity-50 text-white">

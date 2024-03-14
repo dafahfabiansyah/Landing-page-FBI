@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import mobilebatch from '../../../public/Icon_batchingplant-removebg-preview.png';
 import batchingImage from '../../../public/concrete-mixer-concrete-svgrepo-com.png';
 import precastImage from '../../../public/concrete.png';
 import concreteImage from '../../../public/ICON BATCHPUMP.png';
@@ -13,33 +14,41 @@ const ProductSection = () => {
         <section className='bg-[#FAF5EF] py-10 border-t border-b border-gray-200'>
             <h1 className='text-center text-green-600 text-4xl font-bold capitalize'>produk kami</h1>
             <div className='flex justify-center'>
-            <div className='flex flex-row gap-16 w-[700px] items-center'>
-        <div className="bottom-1 w-40 h-40">
-            <Link href='product'>
-            <Image src={batchingImage} alt='batching plant'  className='transition-all hover:scale-125' />
-            <p className='text-center pt-2 capitalize'>batching plant</p>
-            </Link>   
-        </div>
-        <div className="bottom-1 w-40 h-40">
-        <Link href='product'>
-            <Image src={concreteImage} alt='concrete pump' className='transition-all hover:scale-125' />
-            <p className='text-center pt-2 capitalize'>concrete pump</p>
-            </Link>
-        </div>
-        <div className="bottom-1 w-32 h-32"> 
-        <Link href='product'>
-            <Image src={precastImage} alt='precast' className='transition-all hover:scale-125 pb-2'/>
-            <p className='text-center pt-2 capitalize'>precast</p>
-            </Link>
-        </div>
-        <div className="bottom-1 w-40 h-40">
-        <Link href='product'>
-            <Image src={pumpImage} alt='mobile batching' className='transition-all hover:scale-125' />
-            <p className='text-center pt-2 capitalize'>mobile batching</p>
-            </Link>
-        </div>
+            <div className='flex justify-between gap-4'>
+    <div className="flex flex-col items-center">
+        <a href='product'>
+            <Image src={batchingImage} alt='truck mixer' className='w-40 transition-all hover:scale-110 h-40 object-cover' />
+            <p className='text-center mt-2 capitalize'>ready mix concrete</p>
+        </a>   
     </div>
+    <div className="flex flex-col items-center">
+        <a href='product'>
+            <Image src={pumpImage} alt='concrete pump' className='w-40 transition-all hover:scale-110 h-40 object-cover' />
+            <p className='text-center mt-2 capitalize'>concrete pump</p>
+        </a>
+    </div>
+    <div className="flex flex-col w-40 h-40 pt-10 items-center">
+        <a href='product'>
+            <Image src={precastImage} alt='precast' className='w-24 transition-all hover:scale-110 h-24 object-cover' />
+            <p className='text-center mt-2 pt-6 capitalize'>precast</p>
+        </a>
+    </div>
+    <div className="flex flex-col items-center">
+        <a href='product'>
+            <Image src={mobilebatch} alt='batching plant' className='w-40 transition-all hover:scale-110 h-40 object-cover' />
+            <p className='text-center mt-2 capitalize'>batching plant</p>
+        </a>
+    </div>
+    <div className="flex flex-col items-center">
+        <a href='product'>
+            <Image src={concreteImage} alt='mobile batching plant' className='w-40 transition-all hover:scale-110 h-40 object-cover' />
+            <p className='text-center mt-2 capitalize'>mobile batching plant</p>
+        </a>
+    </div>
+   
+    
 </div>
+                </div>
 
         </section>
     );

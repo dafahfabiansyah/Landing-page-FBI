@@ -22,7 +22,7 @@ const Partnership = () => {
       <div className='text-3xl font-bold text-green-600 text-center py-2'>Dengan siapa kami bekerja</div>
       <div className="marquee-container">
         <div className='flex flex-row'>
-          <p className='p-10 bg-white text-green-500 z-50 font-bold w-72 capitalize text-3xl'>100+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span></p>
+          <p className='p-10 bg-white text-green-500 z-50 overflow-y-hidden font-bold w-72 capitalize text-3xl'>900+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span></p>
           <div className="marquee gap-x-20">
             {showImages && (
               <>

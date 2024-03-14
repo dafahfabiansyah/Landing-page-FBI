@@ -23,11 +23,11 @@ const page = () => {
     <Header/>
     <section className='overflow-x-hidden pt-20 pb-2 flex flex-col items-center justify-items-center justify-center'>
       <div className='text-center mx-44'>
-        <p className='font-bold text-green-500 text-3xl capitalize pb-6'>project portfolio</p>
-        <div className="relative mx-10 h-[400px] w-screen" style={{ backgroundImage: `url('/IMG_8274.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className="relative mx-10 h-[400px] top-0 -z-50 w-screen" style={{ backgroundImage: `url('/IMG_8274.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <p className='font-bold text-green-500 text-3xl capitalize pt-6'>project portfolio</p>
       </div>
      </section>
-     <p className='font-bold text-lg capitalize pb-6 text-center py-20 mx-44'>Di halaman ini, Anda akan menemukan informasi lengkap tentang profil produk dan layanan yang kami tawarkan.</p>
+     <p className='font-bold text-lg capitalize pb-6 text-center py-12 mx-44'>Di halaman ini, Anda akan menemukan informasi lengkap tentang profil produk dan layanan yang kami tawarkan.</p>
      <div  data-aos='fade-up' className='gap-4 flex flex-wrap justify-center pb-5  '>
         {PortfolioData.map(portfolio => (
             <Card key={portfolio.id} portfolio={portfolio} />
