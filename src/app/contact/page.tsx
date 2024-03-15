@@ -4,93 +4,46 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import LocationSection from '@/components/section/LocationSection';
+import { Envelope, MapPin, Phone } from '@phosphor-icons/react';
+import Link from 'next/link';
 
 const Page = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus] = useState('');
-
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-
-    try {
-      const response = await emailjs.send('service_izheatf', 'template_p8nzqcu', {
-        name,
-        email,
-        message,
-      }, 'A2hks8Bd-9332EfTG');
-
-      setStatus('success');
-      setName('');
-      setEmail('');
-      setMessage('');
-    } catch (error) {
-      setStatus('error');
-    }
-  };
-
   return (
-    <section>
+    <section className='bg-[#FAF5EF]'>
       <Header />
-      <div className='flex pt-20 pb-4 w-screen flex-row items-center justify-center'>
-        <form onSubmit={handleSubmit} className="w-1/2">
-          <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-            />
-          </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-              Message
-            </label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              rows={6}
-              required
-              className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            />
-          </div>
-          <div>
-            <button
-              type="submit"
-              className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            >
-              Send
-            </button>
-          </div>
-          {status === 'success' && (
-            <p className="text-green-600">Message sent successfully!</p>
-          )}
-          {status === 'error' && (
-            <p className="text-red-600">Oops! Something went wrong. Please try again later.</p>
-          )}
-        </form>
-        {/* <EnvelopeOpen size={32} /> */}
+      <div className='pt-20 '>
+        <h1 className="text-3xl font-bold text-center pb-12">Head office</h1>
+    <div className='capitalize flex flex-row justify-center items-center gap-6'>
+    <div className='w-2/4'>
+  <ul className='ml-[184px] flex flex-row justify-center items-center mb-4'>
+    <li className='mr-2'><span className='text-green-700'><MapPin size={32}/></span></li>
+    <li>
+      <p className='font-bold text-xl mb-1'>alamat</p>
+      <p className='hover:text-green-700 transition-all'><Link target='_blank' href='https://maps.app.goo.gl/5J7cmcCmTUd4qgve6'>JL. Bina Marga No. 76 RT 003 / 005, Sanja, Kec. Citeureup, Kabupaten Bogor, Jawa Barat 16810</Link></p>
+    </li>
+  </ul>
+  <ul className='flex flex-row justify-center items-center mb-4'>
+    <li className='mr-2 -ml-3'><span className='text-green-700'><Envelope size={32} /></span></li>
+    <li className='normal-case'>
+      <p className='font-bold text-xl mb-1'>Email</p>
+      <p className='hover:text-green-700 transition-all'><Link href='mailto:admin@freshbeton.com'>admin@freshbeton.com</Link></p>
+    </li>
+  </ul>
+</div>
+<div className='w-2/4'>
+  <ul className='-mt-20 flex flex-row justify-center items-center'>
+    <li className='mr-2'><span className='text-green-700'><Phone size={32} /></span></li>
+    <li>
+      <p className='font-bold text-xl mb-1'>kontak</p>
+      <p className='hover:text-green-700 transition-all'><Link href='https://wa.me/6281574747474' target='_blank'>0815 7474 7474</Link></p>
+      <p className='hover:text-green-700 transition-all'><Link href='https://wa.me/6281575453524' target='_blank'>0815 7545 3524</Link></p>
+    </li>
+  </ul>
+</div>
+    </div>
       </div>
+     <LocationSection/>
       <Footer />
     </section>
   );

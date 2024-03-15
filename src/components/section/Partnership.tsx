@@ -1,46 +1,34 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PartnershipData from '@/data/PartnershipData';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from 'next/image';
 
 const Partnership = () => {
-  const [showImages, setShowImages] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowImages(true);
-    }, 1000); // Sesuaikan dengan durasi yang Anda inginkan sebelum gambar muncul
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    // <section className='py-2 bg-[#FAF5EF]'>
-    <section className='py-2 bg-white border-t max-h-full transition-all'>
-      <div className='text-3xl font-bold text-green-600 text-center py-2'>Dengan siapa kami bekerja</div>
-      <div className="marquee-container">
-        <div className='flex flex-row'>
-          <p className='p-10 bg-white text-green-500 z-50 overflow-y-hidden font-bold w-72 capitalize text-3xl'>900+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span></p>
-          <div className="marquee gap-x-20">
-            {showImages && (
-              <>
-                {PartnershipData.map((partner, index) => (
-                  <Image 
-                    key={index}
-                    alt={partner.name}
-                    width={partner.width}
-                    height={partner.height}
-                    className={`block partner-item`} 
-                    src={partner.image} 
-                  />
-                ))}
-              </>
-            )}
-          </div>
+    <section className='bg-white border-b py-8 overflow-x-hidden'>
+        <h1 className='text-center text-green-600 text-4xl font-bold capitalize'>Portofolio</h1>
+        <p className='text-center text-black text-lg pb-2 font-bold capitalize'>Dengan siapa kami bekerja</p>
+        <div className='marquee-container'>
+            <div className='marquee'>
+                <div className='partner-item gap-6 flex flex-row justify-center items-center'>
+                    {PartnershipData.map((partner, index) => (
+                        <div key={index} className="partner-item">
+                            <Image 
+                                alt={partner.name}
+                                src={partner.image}
+                                width={partner.width} // Sesuaikan dengan lebar gambar yang diinginkan
+                                height={partner.height} // Sesuaikan dengan tinggi gambar yang diinginkan
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
-      </div>
+        <div className='text-center flex items-center justify-center'>
+        <p className='bg-white text-green-500 font-bold w-72 capitalize text-3xl'>900+ Mitra <br /><span className='text-black text-lg font-thin'>project kami</span></p>
+        </div>
     </section>
   );
 }

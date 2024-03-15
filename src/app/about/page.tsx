@@ -25,11 +25,12 @@ const Page = () => {
       <Header />
       <FloatingIcon/>
      <section className='overflow-x-hidden pt-20 pb-2 flex flex-col items-center justify-items-center justify-center'>
-      <div className='text-center mx-44'>
-        <p className='font-bold text-green-500 text-3xl capitalize pb-6'>company profile</p>
-        {/* <div className="relative h-[400px] w-screen" style={{ backgroundImage: `url('/IMG_5671.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
-        <div className="relative h-[400px] w-screen" style={{ backgroundImage: `url('/IMG_5671.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        <article className='mx-44 text-justify pt-10'><span className='font-bold pt-4'>PT. Fresh Beton Indonesia</span> adalah perusahaan yang bergerak di bidang beton siap pakai 
+      <div className='text-center'>
+        <div className="absolute inset-0 z-0 h-[500px] flex items-center justify-center">
+          <Image src={aboutImage} alt="" layout="fill" objectFit="cover" />
+        </div>
+        <p className='font-bold text-green-500 text-3xl capitalize py-3 pt-[450px]'>company profile</p>
+        <article className='mx-44 text-justify'><span className='font-bold pt-4'>PT. Fresh Beton Indonesia</span> adalah perusahaan yang bergerak di bidang beton siap pakai 
           (readymix) dan beton pracetak (precast). Fresh Beton Readymix berdiri mulai Maret 2018 dengan mendirikan 
           Permanen Batching Plant di neglasari, Sukabumi. Di dalam 1 area yang sama dengan Quary dan Crusher PT. GBP. Kapasitas batching plant terpasang 60 m3/jam 
           dengan jumlah Armada Truck Mixer 15 unit Kapasitas 7m3 dan 5 unit Truck minimix.</article>
