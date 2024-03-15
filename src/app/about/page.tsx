@@ -27,7 +27,7 @@ const Page = () => {
      <section className='overflow-x-hidden pt-20 pb-2 flex flex-col items-center justify-items-center justify-center'>
       <div className='text-center'>
         <div className="absolute inset-0 z-0 h-[500px] flex items-center justify-center">
-          <Image src={aboutImage} alt="" layout="fill" objectFit="cover" />
+          <Image src={aboutImage} alt="" layout="fill" objectFit="cover" blurDataURL='data....' placeholder='blur'/>
         </div>
         <p className='font-bold text-green-500 text-3xl capitalize py-3 pt-[450px]'>company profile</p>
         <article className='mx-44 text-justify'><span className='font-bold pt-4'>PT. Fresh Beton Indonesia</span> adalah perusahaan yang bergerak di bidang beton siap pakai 
