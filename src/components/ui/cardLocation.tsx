@@ -17,20 +17,21 @@ const Card = ({ location }: { location: typeof LocationData[number] }) => {
 
     return (
         <div data-aos="fade-up" className="bg-white border-solid border-2 rounded-md overflow-hidden shadow-xl w-80 m-2">
-            <div onClick={redirectToUrl} className="cursor-pointer h-40 relative">
+            <div onClick={redirectToUrl} className="cursor-pointer h-40 relative hover:z-50">
                 <Image
-                    src={location.image}
+                    src={location.imageThumbnail}
                     alt={location.title}
+                    loading='lazy'
                     layout="fill"
                     objectFit="cover"
                     className="transition duration-500 hover:scale-110"
                 />
                 <p className='absolute bottom-2 right-2 bg-green-500 text-white px-2 rounded-sm'>{location.id}</p>
             </div>
-            <div className="p-4 text-center">
-                <h1 className='capitalize text-black text-xl font-semibold mb-2'>{location.title}</h1>
+            <div className="p-4 ">
+                <h1 className='capitalize text-left text-black text-xl mb-2'>{location.title}</h1>
                 {/* <p className='text-black mb-4'>{location.address}</p> */}
-                <button onClick={navigateToDetail} className='bg-[#252525] hover:bg-gray-800 transition-all text-white py-2 px-4 rounded-md focus:outline-none'>detail</button>
+                <button onClick={navigateToDetail} className='bg-[#252525] hover:bg-gray-800 transition-all text-white p-1 rounded-md focus:outline-none flex justify-end items-end'>detail</button>
             </div>
         </div>
     );

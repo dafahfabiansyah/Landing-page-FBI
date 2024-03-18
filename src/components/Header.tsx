@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React, { ReactNode, useEffect, useState } from 'react';
 import logo from '../../public/FRESH BETON INDONESIA copy.png';
-import { List, Translate, X } from '@phosphor-icons/react';
+import { CaretDown, List, Translate, X } from '@phosphor-icons/react';
 import Link from 'next/link';
 import ToggleButton from './ToggleButton';
 
@@ -85,38 +85,27 @@ const Header = () => {
         <nav className="hidden lg:flex space-x-4 gap-4 uppercase">
           <NavLink href="/" active={activePage === '/'}>beranda</NavLink>
           <NavLink href="/about" active={activePage === '/about'}>tentang kami</NavLink>
-          {/* <NavLink href="/product" active={activePage === '/product'}>produk</NavLink> */}
+            {/* <span>produk</span> */}
           <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="flex items-center space-x-2 uppercase focus:outline-none"
+        className="transition-all flex items-center uppercase focus:outline-none"
       >
-        <span>produk</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fillRule="evenodd"
-            d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414zM10 4a1 1 0 100 2 1 1 0 000-2z"
-            clipRule="evenodd"
-          />
-        </svg>
+          <NavLink href="/product"  active={activePage === '/product'}>produk</NavLink>
+        <CaretDown size={18}  className='ml-1'/>
       </button>
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg z-10">
-          <div className="py-1">
-            <NavLink active={activePage === '/product/ready-mix-concrete'} href="/product/ready-mix-concrete">Ready Mix Concrete</NavLink>
-            <NavLink active={activePage === '/product/concrete-pump'} href="/product/concrete-pump">Concrete Pump</NavLink>
-            <NavLink active={activePage === '/product/precast'} href="/product/precast">Precast</NavLink>
+        <div className="absolute right-0 mt-2 w-60 bg-[#FAF5EF] rounded-lg shadow-lg z-10">
+          <div className="p-2 gap-2">
+            <NavLink active={activePage === '/product/category/ready-mix-concrete'} href="/product/category/ready-mix-concrete">Ready Mix Concrete</NavLink>
+            <NavLink active={activePage === '/product/category/concrete-pump'} href="/product/category/concrete-pump">Concrete Pump</NavLink>
+            <NavLink active={activePage === '/product/category/precast'} href="/product/category/precast">Precast</NavLink>
             <NavLink active={activePage === '/product/batching-plant'} href="/product/batching-plant">Batching Plant</NavLink>
-            <NavLink active={activePage === '/product/mobile-batching-plant'} href="/product/mobile-batching-plant">Mobile Batching Plant</NavLink>
+            <NavLink active={activePage === '/product/category/mobile-batching-plant'} href="/product/category/mobile-batching-plant">Mobile Batching Plant</NavLink>
           </div>
         </div>
       )}
-    </div>
+        </div>
           <NavLink href="/portfolio" active={activePage === '/portfolio'}>Portofolio</NavLink>
           <NavLink href="/news" active={activePage === '/news'}>artikel</NavLink>
           <NavLink href="/contact" active={activePage === '/contact'}>kontak kami</NavLink>
