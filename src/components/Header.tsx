@@ -110,10 +110,15 @@ const Header = () => {
           <NavLink href="/news" active={activePage === '/news'}>artikel</NavLink>
           <NavLink href="/contact" active={activePage === '/contact'}>kontak kami</NavLink>
         </nav>
-
-        <button className="hidden lg:block text-black hover:text-[#1BB441]">
-          <ToggleButton/>
-        </button>
+        {/* button translate */}
+        <div className='flex flex-row gap-3'>
+          <Link href="/english">
+            <Image src='/American_Flag.jpg' alt="american flag" width={30} height={30}></Image>
+          </Link>
+          <Link href='/'>
+            <Image src='/Indonesian flag.png' alt="indonesian flag" width={30} height={30}></Image>
+          </Link>
+        </div>
       </header>
     </div>
   );
