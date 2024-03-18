@@ -7,6 +7,7 @@ import { CaretDown, List, Translate, X } from '@phosphor-icons/react';
 import Link from 'next/link';
 import ToggleButton from './ToggleButton';
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
