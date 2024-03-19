@@ -22,25 +22,25 @@ const CarouselHero = () => {
           <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
             <p className="text-white p-4">Teks Anda di sini</p>
           </div>
-          <Image src={HeroImage1} alt={""} className="h-[98vh]" />
+          <Image src={HeroImage1} alt={""} className="lg:h-[98vh] h-[48vh]" />
         </div>
         <div className="relative">
           <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
             <p className="text-white p-4">Teks Anda di sini</p>
           </div>
-          <Image src={HeroImage2} alt={""} className="h-[98vh]" />
+          <Image src={HeroImage2} alt={""} className="lg:h-[98vh] h-[48vh]" />
         </div>
         <div className="relative">
           <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
             <p className="text-white p-4">Teks Anda di sini</p>
           </div>
-          <Image src={HeroImage3} alt={""} className="h-[98vh]" />
+          <Image src={HeroImage3} alt={""} className="lg:h-[98vh] h-[48vh]" />
         </div>
         <div className="relative">
           <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
             <p className="text-white p-4">Teks Anda di sini</p>
           </div>
-          <Image src={HeroImage4} alt={""} className="h-[98vh]" />
+          <Image src={HeroImage4} alt={""} className="lg:h-[98vh] h-[48vh]" />
         </div>
       </Carousel>
     </section>

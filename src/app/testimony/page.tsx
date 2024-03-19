@@ -27,7 +27,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=2" alt="" />
+                      <img src="/sekolah sma bogor.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -53,7 +53,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=3" alt="" />
+                      <img src="/rumah makan.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -82,7 +82,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                      <img src="/RS Hermina Depok.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -108,7 +108,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=4" alt="" />
+                      <img src="/Hotel Wellness & Resort Bogor.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -136,7 +136,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=5" alt="" />
+                      <img src="/Desa Jogjogan Cisarua.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">
@@ -162,7 +162,7 @@ const page = () => {
                 <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
                   <div className="w-full flex mb-4 items-center">
                     <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img src="https://i.pravatar.cc/100?img=6" alt="" />
+                      <img src="/Rumah Genset Mabes.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm uppercase text-gray-600">

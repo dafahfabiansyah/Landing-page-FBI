@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <section>
       <Header />
-      <div className="sm:block flex flex-wrap">
+      <div className="flex flex-wrap">
         <div className='pt-20 '> 
         <Sidebar />
         </div>

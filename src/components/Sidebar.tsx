@@ -34,22 +34,40 @@ const Sidebar = () => {
 
   return (
     <aside className="pt-20 sidebar px-6 h-full">
-      <div className="search-bar flex flex-row">
-        <input
-          type="text"
-          className="border rounded-lg border-gray-600"
-          placeholder="  Search..."
-          value={searchTerm}
-          onChange={handleSearchChange}
-          onKeyPress={handleKeyPress} // Menambahkan event handler untuk key press
-        />
-        <button className="pl-2" onClick={performSearch}>
-          <MagnifyingGlass size={28} />
-        </button>
+      <div className="flex flex-row justify-between">
+        <div className="search-bar flex flex-row">
+          <input
+            type="text"
+            className="border rounded-lg border-gray-600"
+            placeholder="  Search..."
+            value={searchTerm}
+            onChange={handleSearchChange}
+            onKeyPress={handleKeyPress} // Menambahkan event handler untuk key press
+          />
+          <button className="pl-2" onClick={performSearch}>
+            <MagnifyingGlass size={28} />
+          </button>
+        </div>
+        <ul className="capitalize flex flex-row gap-4 pt-2">
+          {[
+            "Ready Mix Concrete",
+            "Concrete Pump",
+            "Precast",
+            "Batching Plant",
+            "Mobile Batching Plant",
+          ].map((category, index) => (
+            <li
+              key={index}
+              className="bg-gray-100 hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
+            >
+              <Link href={`/news/category/${category}`}>{category}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div>
         {/* <h3 className="font-bold text-lg">Categories</h3> */}
-        <ul className="capitalize flex flex-row gap-y-2 pt-2">
+        {/* <ul className="capitalize flex flex-row gap-y-2 pt-2">
           {ArticleData.map((article) => (
             <li
               key={article.id}
@@ -60,7 +78,23 @@ const Sidebar = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
+        {/* <ul className="capitalize flex flex-row gap-4 pt-2">
+          {[
+            "Ready Mix Concrete",
+            "Concrete Pump",
+            "Precast",
+            "Batching Plant",
+            "Mobile Batching Plant",
+          ].map((category, index) => (
+            <li
+              key={index}
+              className="bg-gray-100 hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
+            >
+              <Link href={`/news/category/${category}`}>{category}</Link>
+            </li>
+          ))}
+        </ul> */}
       </div>
       <div className="categories">
         <ul className="capitalize flex flex-col gap-y-2 pt-2">

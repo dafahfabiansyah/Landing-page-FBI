@@ -5,7 +5,6 @@ import React, { ReactNode, useEffect, useState } from "react";
 import logo from "../../public/FRESH BETON INDONESIA copy.png";
 import { CaretDown, List, Translate, X } from "@phosphor-icons/react";
 import Link from "next/link";
-import ToggleButton from "./ToggleButton";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -161,7 +160,7 @@ const Header = () => {
             )}
           </div>
           <NavLink href="/portfolio" active={activePage === "/portfolio"}>
-            Portofolio
+            portofolio
           </NavLink>
           <NavLink href="/news" active={activePage === "/news"}>
             artikel
@@ -172,7 +171,7 @@ const Header = () => {
         </nav>
         {/* button translate */}
         <div className="flex flex-row gap-3">
-          <Link href="/english">
+          <Link href="/en">
             <Image
               src="/American_Flag.jpg"
               alt="american flag"
