@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { MagnifyingGlass } from '@phosphor-icons/react';
-import { ArticleData } from '@/data/ArticlesData';
-import Link from 'next/link';
+import React, { useState } from "react";
+import { MagnifyingGlass } from "@phosphor-icons/react";
+import { ArticleData } from "@/data/ArticlesData";
+import Link from "next/link";
 
 interface Article {
   id: number;
@@ -12,7 +12,7 @@ interface Article {
 }
 
 const Sidebar = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState<Article[]>([]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,14 +27,14 @@ const Sidebar = () => {
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       performSearch();
     }
   };
 
   return (
     <aside className="pt-20 sidebar px-6 h-full">
-     <div className="search-bar flex flex-row">
+      <div className="search-bar flex flex-row">
         <input
           type="text"
           className="border rounded-lg border-gray-600"
@@ -56,7 +56,7 @@ const Sidebar = () => {
               className="bg-gray-100 hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
             >
               <Link href={`/news/category/${article.category}`}>
-              {article.category}
+                {article.category}
               </Link>
             </li>
           ))}
@@ -69,9 +69,7 @@ const Sidebar = () => {
               key={result.id}
               className="hover:bg-green-500 hover:text-white transition-all p-1 relative"
             >
-              <Link href={`/news/detail/${result.id}`}>
-              {result.title}
-              </Link>
+              <Link href={`/news/detail/${result.id}`}>{result.title}</Link>
             </li>
           ))}
         </ul>

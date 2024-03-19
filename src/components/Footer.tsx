@@ -1,92 +1,127 @@
-"use client"
-import { FacebookLogo, InstagramLogo, LinkedinLogo, Storefront, TwitterLogo, YoutubeLogo } from "@phosphor-icons/react";
-import React, { ReactNode } from 'react';
+"use client";
+
+import React, { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import GoogleMaps from '@/components/GoogleMaps';
+import GoogleMaps from "@/components/GoogleMaps";
 
 interface LinkGroupProps {
-    children: ReactNode;
-    header: string;
-  }
-  interface NavLinkProps {
-    link: string;
-    label: string;
-  }
+  children: ReactNode;
+  header: string;
+}
+interface NavLinkProps {
+  link: string;
+  label: string;
+}
 
 const getCurrentDate = () => {
   return new Date().getFullYear();
-}
+};
 
 const Footer = () => {
   return (
     <footer className="bg-[#2E2E2E] text-white pt-10 flex z-10 items-center place-items-center gap-4 justify-between mx-auto">
-    <div className="container">
-      <div className="-mx-4 flex flex-wrap justify-center"> {/* Modifikasi di sini */}
-        {/* <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-          <div className="mb-10 w-full">
-            <GoogleMaps location={{
-              lat: 0,
-              lng: 0
-            }}/>
-          </div>
-        </div> */}
-        <LinkGroup header="Company">
-          <NavLink link="/#" label="PT Farrasindo Perkasa" />
-          {/* <NavLink link="/#" label="PT Fresh Beton Indonesia" /> */}
-          <NavLink link="/#" label="PT Citi Crane" />
-          <NavLink link="/#" label="Gunung Bumi Perkasa" />
-        </LinkGroup>
-        
-        <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
-          <div className="mb-10 w-full">
-            <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-              Follow Us On
-            </h4>
-            <div className="mb-6 flex items-center gap-2">
-              <Link href="https://www.facebook.com/Freshbetonindonesia/" target="_blank">
-              <FacebookLogo size={32} className="hover:bg-[#3b5998] hover:text-white rounded-md transition-all" />
-              </Link>
-              <Link href="https://www.instagram.com/freshbeton_indonesia/" target="_blank">
-              <InstagramLogo size={32} className="hover:bg-[#405DE6] hover:text-white rounded-md transition-all"/>
-              </Link>
-              <Link href="https://www.tokopedia.com/freshbeton" target="_blank">
-              <Storefront size={32} className="hover:bg-green-500 hover:text-white rounded-md transition-all"/>
-              </Link>
-              {/* <YoutubeLogo size={32} className="hover:text-white rounded-md hover:bg-red-500 transition-all" />
-              <LinkedinLogo size={32} className="hover:text-white rounded-md hover:bg-[#0e76a8] transition-all"/> */}
+      <div className="container">
+        <div className="-mx-4 flex flex-wrap justify-center">
+          <LinkGroup header="">
+            <Image
+              className="flex ml-9 items-center justify-center"
+              src="/FRESH BETON INDONESIA copy.png"
+              alt="logo"
+              width={100}
+              height={100}
+            />
+            <p className="text-white w-44">fresh beton indonesia</p>
+          </LinkGroup>
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+            <div className="mb-10 w-full">
+              <h4 className="mb-9 capitalize text-lg font-semibold text-dark dark:text-white">
+                terhubung dengan kami
+              </h4>
+              <div className="mb-6 flex items-center gap-2">
+                <Link
+                  href="https://www.facebook.com/Freshbetonindonesia/"
+                  target="_blank"
+                >
+                  <Image
+                    // size={32}
+                    src={"/facebook-removebg-preview.png"}
+                    alt={"facebook icon"}
+                    width={32}
+                    height={32}
+                    className="hover:scale-110  rounded-md transition-all"
+                  />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/freshbeton_indonesia/"
+                  target="_blank"
+                >
+                  <Image
+                    src={"/instagram-removebg-preview.png"}
+                    alt={"instagram icon"}
+                    // size={32}
+                    width={32}
+                    height={32}
+                    className="hover:scale-110 rounded-md transition-all"
+                  />
+                </Link>
+                <Link
+                  href="https://www.tokopedia.com/freshbeton"
+                  target="_blank"
+                >
+                  <Image
+                    // size={32}
+                    src="/tokopedia-38845.png"
+                    className="hover:scale-110  rounded-md transition-all"
+                    alt={"tokopedia icon"}
+                    width={32}
+                    height={32}
+                  />
+                </Link>
+              </div>
+              <div className="">
+                <button>
+                  <Link
+                    href="/contact"
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Contact
+                  </Link>
+                </button>
+              </div>
             </div>
-            {/* <p className="text-base text-body-color dark:text-dark-6 capitalize">
-              &copy; {getCurrentDate()} fresh beton indonesia
-            </p> */}
+          </div>
+          <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
+            <div className="mb-10 w-full">
+              <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                Alamat
+              </h4>
+              <div className="mb-6 flex items-center gap-2">
+                <p className="transition-all">
+                  JL. Bina Marga No. 76 RT 003 / 005, Sanja, Kec. Citeureup,
+                  Kabupaten Bogor, Jawa Barat 16810
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
+            <div className="mb-10 w-full">
+              <GoogleMaps
+                location={{
+                  lat: 0,
+                  lng: 0,
+                }}
+              />
+            </div>
           </div>
         </div>
-        <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
-          <div className="mb-10 w-full">
-            <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-            Contact Us
-            </h4>
-            <div className="mb-6 flex items-center gap-2">
-            <button>
-              <Link href="/contact" className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Contact</Link>
-            </button>
-            </div>
-            <p className="text-base text-body-color dark:text-dark-6 capitalize">
-              &copy; {getCurrentDate()} fresh beton indonesia
-            </p>
-          </div>
-        </div>
-        <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
-          <div className="mb-10 w-full">
-            <GoogleMaps location={{
-              lat: 0,
-              lng: 0
-            }}/>
-          </div>
+        <div className="flex justify-center items-center mb-6">
+          <p className="text-base text-body-color dark:text-dark-6 capitalize">
+            Copyright &copy; {getCurrentDate()} fresh beton indonesia
+          </p>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   );
 };
 
@@ -119,4 +154,3 @@ const NavLink: React.FC<NavLinkProps> = ({ link, label }) => {
 };
 
 export default Footer;
-

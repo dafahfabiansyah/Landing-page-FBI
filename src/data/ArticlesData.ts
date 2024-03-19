@@ -1,12 +1,18 @@
 import articleImage1 from '../../public/IMG_9002.png';
 import Safari from '../../public/safari-journey.png';
+import jenisCP from '../../public/jenis jenis cp.png';
+import CPterpanjang from '../../public/CP terpanjang.png'; 
+import CPpembantu from '../../public/CP pembantu proses pengecoran beton.png';
+import apaituCP from '../../public/apa itu concrete pump.png';
+import keuntunganCP from '../../public/keuntungan menggunakan cp.png';
+import beton from '../../public/Beton Ready Mix, Andalan Dalam Pengecoran.png';
 
 export const ArticleData = [
   {
     id: 1,
     title: 'Concrete Pump Terpanjang di Indonesia',
     content: `Truck Concrete Pump dengan panjang boom 60 meter, merupakan Truck Pump dengan bentangan boom terpanjang yang ada di Indonesia serta mampu  memberikan solusi alternatif untuk para Kontraktor dalam menjalankan metode pengecoran.`,
-    image: articleImage1,
+    image: CPterpanjang,
     category: 'Concrete Pump',
     createDate: '30 Agustus 2022',
     authorName: 'qwerty',
@@ -18,9 +24,9 @@ export const ArticleData = [
   },
   {
     id: 2,
-    title: 'Mengenal Proyek Mass Concrete',
+    title: 'Concrete Pump (Pompa Beton), Mesin Raksasa Pembantu Proses Pengecoran Beton',
     content: 'Content of Article 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.',
-    image: articleImage1,
+    image: CPpembantu,
     category: 'Category',
     createDate: '16 Maret 2023',
     authorName: 'qwerty',
@@ -34,7 +40,7 @@ export const ArticleData = [
     id: 3,
     title: 'Readymix Berkualitas Jakarta',
     content: 'Content of Article 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.',
-    image: articleImage1,
+    image: apaituCP,
     category: 'Category',
     createDate: '30 Agustus 2022',
     authorName: 'qwerty',
@@ -48,7 +54,7 @@ export const ArticleData = [
     id: 4,
     title: 'Fungsi Penting Batching Plant dalam Konstruksi',
     content: 'Content of Article 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.',
-    image: articleImage1,
+    image: keuntunganCP,
     category: 'Category',
     createDate: '30 Agustus 2022',
     authorName: 'qwerty',
@@ -62,7 +68,7 @@ export const ArticleData = [
     id: 5,
     title: 'Jenis Jenis Concrete Pump',
     content: 'Content of Article 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.',
-    image: articleImage1,
+    image: jenisCP,
     category: 'Category',
     createDate: '30 Agustus 2022',
     authorName: 'qwerty',
@@ -76,7 +82,7 @@ export const ArticleData = [
     id: 6,
     title: 'Batch Pump, All In One Dalam Pengecoran',
     content: 'Content of Article 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.',
-    image: articleImage1,
+    image: beton,
     category: 'Category',
     createDate: '30 Agustus 2022',
     authorName: 'qwerty',

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { ArrowBendLeftUp} from "@phosphor-icons/react"; 
+import { ArrowBendLeftUp } from "@phosphor-icons/react";
 import tokopediIcon from "../../public/tokopedia-38845.png";
 import whatsappIcon from "../../public/—Pngtree—whatsapp mobile software icon_8704828.png";
 import Image from "next/image";
@@ -9,7 +9,7 @@ import Image from "next/image";
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 };
 function FloatingIcon() {
@@ -44,8 +44,11 @@ function FloatingIcon() {
                 height={32}
               />
             </a>
-            <button onClick={scrollToTop} className="block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded">
-            <ArrowBendLeftUp size={32} />
+            <button
+              onClick={scrollToTop}
+              className="block py-1 px-2 text-gray-800 hover:bg-gray-200 rounded"
+            >
+              <ArrowBendLeftUp size={32} />
             </button>
           </div>
         </div>

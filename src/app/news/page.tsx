@@ -24,7 +24,7 @@ const Page = () => {
         <div className='pt-20 '> 
         <Sidebar />
         </div>
-        <div className='gap-6 flex flex-wrap justify-center py-10 pt-20 '>
+        <div className='gap-4 flex flex-wrap justify-center pt-20 '>
           {ArticleData.map(article => (
             <Card key={article.id} article={article} />
           ))}
