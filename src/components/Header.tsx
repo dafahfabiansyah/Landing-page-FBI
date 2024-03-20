@@ -100,7 +100,7 @@ const Header = () => {
           </Link>
         </div>
         {/* desktop view */}
-        <nav className="hidden lg:flex space-x-4 gap-4 ">
+        <nav className="hidden capitalize lg:flex space-x-4 gap-4 ">
           <NavLink href="/" active={activePage === "/"}>
             beranda
           </NavLink>
@@ -114,7 +114,7 @@ const Header = () => {
               className="transition-all flex items-center focus:outline-none"
             >
               <NavLink href="/product" active={activePage === "/product"}>
-                produk
+                Produk
               </NavLink>
               <CaretDown size={18} className="ml-1" />
             </button>

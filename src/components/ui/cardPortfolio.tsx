@@ -24,9 +24,9 @@ const Card = ({ portfolio }: { portfolio: (typeof PortfolioData)[number] }) => {
           className="w-full transition duration-500 hover:scale-110 hover:z-30 rounded-t-md"
           onClick={navigateToDetail}
         />
-        <p className="absolute bottom-2 right-2 backdrop-blur-sm text-white px-2 rounded-sm">
+        {/* <p className="absolute bottom-2 right-2 backdrop-blur-sm text-white px-2 rounded-sm">
           {portfolio.id}
-        </p>
+        </p> */}
       </div>
       <div className="flex flex-col justify-between text-center p-4 w-full">
         <div>
