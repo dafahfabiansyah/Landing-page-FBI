@@ -1,9 +1,21 @@
-import React from 'react'
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import React from "react";
+import Card from "./CardMobileBatch";
+import { MobileBatchingPlantData } from "@/data/ProductCategoriesData";
 
-const page = () => {
+const Page = () => {
   return (
-    <div>page mobile-batching-plant</div>
-  )
-}
+    <section>
+      <Header />
+      <div className="gap-10 flex flex-wrap justify-center pt-20 pb-5  ">
+      {MobileBatchingPlantData.map(mobilebatch => (
+          <Card key={mobilebatch.id} mobilebatch={mobilebatch} />
+        ))}
+      </div>
+      <Footer />
+    </section>
+  );
+};
 
-export default page
+export default Page;

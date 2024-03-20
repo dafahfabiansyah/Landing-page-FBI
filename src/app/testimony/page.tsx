@@ -30,8 +30,8 @@ const page = () => {
                       <img src="/sekolah sma bogor.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        bapak asep <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. asep <br />
                         (Project Owner)
                       </h6>
                     </div>
@@ -56,8 +56,8 @@ const page = () => {
                       <img src="/rumah makan.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak Kamsir <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. Kamsir <br />
                         (Project Manager)
                       </h6>
                     </div>
@@ -85,8 +85,8 @@ const page = () => {
                       <img src="/RS Hermina Depok.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak Dani Purwanto <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. Dani Purwanto <br />
                         (Project Manager).
                       </h6>
                     </div>
@@ -111,8 +111,8 @@ const page = () => {
                       <img src="/Hotel Wellness & Resort Bogor.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak Hairuddin <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. Hairuddin <br />
                         (Project Owner).
                       </h6>
                     </div>
@@ -139,7 +139,7 @@ const page = () => {
                       <img src="/Desa Jogjogan Cisarua.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
+                      <h6 className="font-bold text-sm text-gray-600">
                         H. Enjang Ruslan Purnama <br />
                         (Kepala Desa)
                       </h6>
@@ -165,8 +165,8 @@ const page = () => {
                       <img src="/Rumah Genset Mabes.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. <br />
                         (Project Manager)
                       </h6>
                     </div>

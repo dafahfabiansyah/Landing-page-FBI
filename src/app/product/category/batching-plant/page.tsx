@@ -1,16 +1,21 @@
-import React from 'react'
-import { ProductData } from '@/data/ProductData';
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import React from "react";
+import Card from "./CardBatching";
+import { BatchingPlantData } from "@/data/ProductCategoriesData";
 
-interface PageParams {
-  id: string;
-}
-
-const Page = ({ params }: { params: PageParams }) => {
-  const { id } = params;
-  const productId = parseInt(id, 10);
+const Page = () => {
   return (
-    <div>page batching-plant</div>
-  )
-}
+    <section>
+      <Header />
+      <div className="gap-10 flex flex-wrap justify-center pt-20 pb-5  ">
+        {  BatchingPlantData.map((batching) => (
+          <Card key={batching.id} batching={batching} />
+        ))}
+      </div>
+      <Footer />
+    </section>
+  );
+};
 
-export default Page
+export default Page;

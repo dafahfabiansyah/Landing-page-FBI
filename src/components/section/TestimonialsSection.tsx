@@ -31,8 +31,8 @@ const TestimonialsSection = () => {
                       <img src="/sekolah sma bogor.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        bapak asep <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. asep <br />
                         (Project Owner).
                       </h6>
                     </div>
@@ -61,8 +61,8 @@ const TestimonialsSection = () => {
                       <img src="/rumah makan.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak Kamsir <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. Kamsir <br />
                         (Project Manager).
                       </h6>
                     </div>
@@ -92,8 +92,8 @@ const TestimonialsSection = () => {
                       <img src="/RS Hermina Depok.jpeg" alt="" />
                     </div>
                     <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Bapak Dani Purwanto <br />
+                      <h6 className="font-bold text-sm text-gray-600">
+                        Bpk. Dani Purwanto <br />
                         (Project Manager).
                       </h6>
                     </div>

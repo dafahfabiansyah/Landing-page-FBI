@@ -143,7 +143,7 @@ const Header = () => {
                   </NavLink>
                   <NavLink
                     active={activePage === "/product/batching-plant"}
-                    href="/product/batching-plant"
+                    href="/product/category/batching-plant"
                   >
                     Batching Plant
                   </NavLink>

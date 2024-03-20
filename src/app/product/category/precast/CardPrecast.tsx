@@ -8,12 +8,6 @@ import { useRouter } from "next/navigation";
 import { CaretRight } from "@phosphor-icons/react";
 
 const Card = ({ precast}: { precast: (typeof PrecastData)[number] }) => {
-//   const router = useRouter();
-
-//   const navigateToDetail = () => {
-//     router.push(`/product/category/precast/${precast.id}`);
-//   };
-
   return (
     <div className="bg-white rounded-md shadow-md w-96">
       <div className="cursor-pointer h-40 relative">
