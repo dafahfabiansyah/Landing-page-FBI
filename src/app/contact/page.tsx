@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact - Fresh Beton Indonesia",
-  description: "Halaman contact Fresh Beton Indonesia",
+  description: "Looking to connect with PT. Fresh Beton Indonesia? Here's how:",
   openGraph: {
     images: ['/FRESH BETON INDONESIA-.png',],
   },

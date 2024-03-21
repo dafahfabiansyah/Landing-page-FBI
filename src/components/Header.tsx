@@ -102,10 +102,10 @@ const Header = () => {
         {/* desktop view */}
         <nav className="hidden capitalize lg:flex space-x-4 gap-4 ">
           <NavLink href="/" active={activePage === "/"}>
-            beranda
+            home
           </NavLink>
           <NavLink href="/about" active={activePage === "/about"}>
-            tentang kami
+            about us
           </NavLink>
           {/* <span>produk</span> */}
           <div className="relative">
@@ -114,7 +114,7 @@ const Header = () => {
               className="transition-all flex items-center focus:outline-none"
             >
               <NavLink href="/product" active={activePage === "/product"}>
-                Produk
+                Product
               </NavLink>
               <CaretDown size={18} className="ml-1" />
             </button>
@@ -160,21 +160,21 @@ const Header = () => {
             )}
           </div>
           <NavLink href="/portfolio" active={activePage === "/portfolio"}>
-            portofolio
+            portfolio
           </NavLink>
           <NavLink href="/news" active={activePage === "/news"}>
-            artikel
+            article
           </NavLink>
           <NavLink href="/contact" active={activePage === "/contact"}>
-            kontak kami
+            contact us
           </NavLink>
         </nav>
         {/* button translate */}
-        <div className="flex items-center flex-row  gap-3">
+        <div className="flex flex-row gap-3 items-center">
           <Link href="/en">
             <Image
               src="/english flag.png"
-              alt="english flag"
+              alt="american flag"
               width={30}
               height={30}
             ></Image>

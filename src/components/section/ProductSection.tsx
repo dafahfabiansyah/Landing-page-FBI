@@ -13,7 +13,7 @@ const ProductSection = () => {
   return (
     <section className="bg-[#FAF5EF] py-10 border-t border-b border-gray-200">
       <h1 className="text-center text-green-600 text-4xl font-bold capitalize">
-        produk kami
+        our product
       </h1>
       <div className="flex justify-center">
         <div className="flex justify-between gap-10 lg:flex-row flex-wrap">

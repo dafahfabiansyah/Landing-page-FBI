@@ -19,29 +19,57 @@ const CarouselHero = () => {
         swipeable={true}
       >
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
-            <p className="text-white p-4">Teks Anda di sini</p>
+          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+            <div className="flex flex-col container">
+              <h1 className="text-green-500 text-2xl p-4">Company Summary</h1>
+              <p className=" text-xl">
+                Concrete batching plant is a kind of equipment used to mix
+                concrete in a concentrated way, which is widely used in large
+                and medium construction engineering projects.
+              </p>
+            </div>
           </div>
           <Image src={HeroImage1} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
-            <p className="text-white p-4">Teks Anda di sini</p>
+          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+            <div className="flex flex-col container">
+              <h1 className="text-green-500 text-2xl p-4">
+                Quality and Service
+              </h1>
+              <p className=" text-xl">
+                The ethos embodied by our company is ‘quality and Service’. We
+                remain at the forefront of the concrete in Indonesia, through
+                our focus in delivering the best product with the best service.
+              </p>
+            </div>
           </div>
           <Image src={HeroImage2} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
-            <p className="text-white p-4">Teks Anda di sini</p>
+          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+            <div className="flex flex-col container">
+              <h1 className="text-green-500 text-2xl p-4">Our batching plant</h1>
+              <p className=" text-xl">
+                Not only in Jabodetabek, but our batching plant locations are
+                available in several other locations.
+              </p>
+            </div>
           </div>
           <Image src={HeroImage3} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full backdrop-blur-sm flex items-center justify-center">
-            <p className="text-white p-4">Teks Anda di sini</p>
+          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+            <div className="flex flex-col container">
+              <h1 className="text-green-500 text-2xl p-4">Portfolio project</h1>
+              <p className=" text-xl">
+              Has served many projects throughout Indonesia.
+              </p>
+            </div>
           </div>
           <Image src={HeroImage4} alt={""} className="h-[98vh]" />
         </div>
+        
       </Carousel>
     </section>
   );

@@ -9,10 +9,10 @@ const Partnership = () => {
   return (
     <section className="bg-white border-b py-8 overflow-x-hidden">
       <h1 className="text-center text-green-600 text-4xl font-bold capitalize">
-        Portofolio
+        Partnership
       </h1>
       <p className="text-center text-black text-lg pb-2 font-bold capitalize">
-        Dengan siapa kami bekerja
+        Who we work with
       </p>
       <div className="marquee-container">
         <div className="marquee">
@@ -32,8 +32,8 @@ const Partnership = () => {
       </div>
       <div className="text-center flex items-center justify-center">
         <p className="bg-white text-green-500 font-bold w-72 capitalize text-3xl">
-          900+ Mitra <br />
-          <span className="text-black text-lg font-thin">project kami</span>
+          900+ Partners <br />
+          <span className="text-black text-lg font-thin">Our project</span>
         </p>
       </div>
     </section>

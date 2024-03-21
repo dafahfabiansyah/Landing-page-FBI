@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 capitalize text-lg font-semibold text-dark dark:text-white">
-                terhubung dengan kami
+                connect with us
               </h4>
               <div className="mb-6 flex items-center gap-2">
                 <Link
@@ -94,7 +94,7 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-                Alamat
+                Address
               </h4>
               <div className="mb-6 flex items-center gap-2">
                 <p className="transition-all">

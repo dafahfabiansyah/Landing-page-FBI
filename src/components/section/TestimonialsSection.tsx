@@ -15,10 +15,10 @@ const TestimonialsSection = () => {
       <div className="min-w-screen bg-[#FAF5EF] flex items-center justify-center">
         <div className="w-full bg-[#FAF5EF] px-5 py-16 md:py-24 text-gray-800">
           <h1 className="text-center text-green-600 pb-4 text-4xl font-bold capitalize">
-            testimoni
+            testimonials
           </h1>
           <p className="text-center text-black text-lg pb-2 font-bold capitalize">
-            Apa yang dikatakan klien kami
+          What our clients have to say
           </p>
           <div className="w-full max-w-6xl mx-auto">
             <div className="-mx-3 md:flex items-start">
@@ -122,7 +122,7 @@ const TestimonialsSection = () => {
               onClick={navigateToDetail}
               className="bg-green-500 hover:bg-green-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none"
             >
-              baca semua
+              read all
             </button>
           </div>
         </div>

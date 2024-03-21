@@ -13,7 +13,8 @@ import FloatingIcon from '@/components/FloatingIcon';
 
 export const metadata: Metadata = {
   title: "About us - Fresh Beton Indonesia",
-  description: "Halaman tentang Fresh Beton Indonesia",
+  description: `Fresh Concrete Indonesia: Specializing in ready-mixed and precast concrete since 2018. We are a company that focuses on the production of ready-mixed concrete and precast concrete. With the establishment of Fresh Beton Readymix since March 2018, we have established our Permanent Batching Plant in Neglasari, Sukabumi. We are a large-scale manufacturer specializing in producing various mining machines including different types of 
+  sand and gravel equipment, milling equipment, mineral processing equipment and building materials equipment.`,
   icons: {
     icon : "./icon.ico",
   }
@@ -30,32 +31,32 @@ const Page = () => {
           <Image src={aboutImage} alt="" layout="fill" objectFit="cover" blurDataURL='data....' placeholder='blur'/>
         </div>
         <p className='font-bold text-green-500 text-3xl capitalize py-3 pt-[450px]'>company profile</p>
-        <article className='mx-44 text-justify'><span className='font-bold pt-4'>PT. Fresh Beton Indonesia</span> adalah perusahaan yang bergerak di bidang beton siap pakai 
-          (readymix) dan beton pracetak (precast). Fresh Beton Readymix berdiri mulai Maret 2018 dengan mendirikan 
-          Permanen Batching Plant di neglasari, Sukabumi. Di dalam 1 area yang sama dengan Quary dan Crusher PT. GBP. Kapasitas batching plant terpasang 60 m3/jam 
-          dengan jumlah Armada Truck Mixer 15 unit Kapasitas 7m3 dan 5 unit Truck minimix.</article>
+        <article className='mx-44 text-justify'><span className='font-bold pt-4'>PT. Fresh Beton Indonesia</span> is a company engaged in the field of ready-mixed concrete 
+          (readymix) and precast concrete. Fresh Beton Readymix was established in March 2018 with the establishment of 
+          We are a family owned business and have been involved in supplying ready-mix concrete batching plants and equipment to the industry over the last 25 years. The installed batching plant capacity is 60 m3/hour 
+          with a fleet of 15 7m3 capacity mixer trucks and 5 minimix trucks.</article>
       </div>
       <div className='flex flex-row gap-8 mx-44 pt-6 text-justify'>
           <div data-aos='fade-right' className='w-1/2'>
-            <h1 className='text-xl font-bold capitalize'>visi</h1>
-            <p>Menjadi perusahaan Beton Siap Pakai (Readymix Concrete) dan Beton Pracetak (Precast Concrete) dengan dukungan peralatan yang inovatif, 
-              berkualitas, dan terpercaya bagi masyarakat dan dunia konstruksi.</p>
+            <h1 className='text-xl font-bold capitalize'>vision</h1>
+            <p>To be a Readymix Concrete and Precast Concrete company with innovative equipment support, 
+              quality, and reliable for the community and the construction world.</p>
           </div>
           <div  data-aos='fade-left' className='w-1/2'>
-            <h1 className='text-xl font-bold capitalize text-end'>misi</h1>
-            <p>Memenuhi kebutuhan pelanggan dengan memberikan produk serta solusi yang inovatif dan layanan yang cepat dan handal. Sejalan dengan Visi dan Misinya, mempunyai kebijakan terhadap mutu.
-              Kami menjual beton segar sesuai dengan kebutuhan proyek Anda.</p>
+            <h1 className='text-xl font-bold capitalize text-end'>mision</h1>
+            <p>Meeting customer needs by providing innovative products and solutions and fast and reliable services. In line with its Vision and Mission, has a policy towards quality.
+              We sell fresh concrete according to your project needs.</p>
           </div>
       </div>
       <div data-aos='fade-up' className='mx-44 pt-10'>
-        <h1 className='capitalize text-center text-2xl mb-4 text-green-500'>sekilas tentang PT. Fresh Beton Indonesia</h1>
-        <article className='text-justify'><span className='font-bold'>PT. Fresh Beton Indonesia</span> yang didirikan tahun 2017 
-        adalah produsen beton Readymix terlengkap dengan peralatan produksi yang bertehnologi maju dan system terkomputerisasi untuk jaminan mutu produk dan proses produksinya. Didukung oleh suplai material alam Split Andesit, Abubatu Cuci dan Pasir Silika Cuci kapasitas besar dari Quary Crusher Grup Internal kami. Beton ready mix dapat digunakan untuk berbagai macam kontruksi industrial, komersial dan juga infrastruktur yang mencakup pembangunangedung-gedung, pabrik, perumahan, jalan raya, jalan tol, bangunan air, Lapangan Terbang dan lain sebagainya. <br /> <span className='font-bold'>PT. Fresh Beton Indonesia</span>, juga memiliki peralatan produksi Batching type Fix Plant dan Mobile Plant untuk kebutuhan beton di remote area dan proyek yang sulit dijangkau dengan readymix konvensional.</article>
+        <h1 className='capitalize text-center text-2xl mb-4 text-green-500'>Overview of PT Fresh Beton Indonesia</h1>
+        <article className='text-justify'><span className='font-bold'>PT. Fresh Beton Indonesia</span> which was established in 2017 
+        is a complete Readymix concrete manufacturer with technologically advanced production equipment and computerized systems for quality assurance of products and production processes. Supported by the supply of natural materials Split Andesite, Abubatu Cuci and Silica Sand Cuci large capacity of our internal group Quary Crusher. Ready mix concrete can be used for a wide range of industrial, commercial and infrastructure construction which includes the construction of buildings, factories, housing, highways, toll roads, waterworks, airstrips and so on. <br /> <span className='font-bold'>PT. Fresh Beton Indonesia</span>, We are a family owned business and have been involved in supplying ready-mix concrete batching plants and equipment to the industry over the last 25 years.</article>
       </div>
       <div>
       <div className="mx-44 pt-10">
-            <h1 data-aos='fade-up' className='capitalize text-center text-2xl mb-4 text-green-500'>Nilai Budaya dan Integrasi Bisnis</h1>
-            <p data-aos='fade-up' className="mb-4 text-center">Komitmen kami terhadap misi senantiasa dilandasi oleh nilai – nilai yang menjadi filosofi insan.</p>
+            <h1 data-aos='fade-up' className='capitalize text-center text-2xl mb-4 text-green-500'>Cultural Values and Business Integration</h1>
+            <p data-aos='fade-up' className="mb-4 text-center">Our commitment to our mission has always been based on the values that are the philosophy of our people..</p>
             <ul>
                 <li data-aos="fade-right" className="mb-2">
                     <span className='text-5xl text-emerald-600 pr-5'>S</span>emangat yang tinggi dalam belajar dan terus menggali ilmu untuk pengembangan dan mencapai visi misi perusahaan
@@ -77,7 +78,7 @@ const Page = () => {
       </div>
       {/* <div className='flex pb-10'> */}
       <div className='flex flex-col items-center pb-10'>
-  <h1 className='capitalize text-center text-2xl mb-4 text-green-500'>sertifikat iso</h1>
+  <h1 className='capitalize text-center text-2xl mb-4 text-green-500'>certificate iso</h1>
   <div className='flex flex-row h-[410px] w-[300px] justify-center gap-40'>
     <Image src={isoImage} alt='' className='hover:scale-150 transition-all'/>
     <Image src={isoImage9001} alt='' className='hover:scale-150 transition-all'/>
