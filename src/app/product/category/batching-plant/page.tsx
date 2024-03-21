@@ -9,7 +9,6 @@ const Page = () => {
   return (
     <section className="overflow-x-hidden">
       <Header />
-      {/* <div className=""> */}
         <div className="absolute inset-0 z-0 h-[500px] flex items-center justify-center">
           <Image src='/Batching Plant.jpg' alt="" layout="fill" className="flex items-center justify-center"/>
         </div>
@@ -18,7 +17,6 @@ const Page = () => {
             <Card key={batching.id} batching={batching} />
           ))}
         </div>
-      {/* </div> */}
       <Footer />
     </section>
   );
