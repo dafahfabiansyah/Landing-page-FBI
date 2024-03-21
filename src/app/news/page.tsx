@@ -7,7 +7,6 @@ import Sidebar from '@/components/Sidebar'; // Import the Sidebar component
 import { Metadata } from 'next';
 import FloatingIcon from '@/components/FloatingIcon';
 
-
 export const metadata: Metadata = {
   title: "Article - Fresh Beton Indonesia",
   description: "Halaman artikel Fresh Beton Indonesia",

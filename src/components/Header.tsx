@@ -170,11 +170,11 @@ const Header = () => {
           </NavLink>
         </nav>
         {/* button translate */}
-        <div className="flex flex-row gap-3">
+        <div className="flex items-center flex-row  gap-3">
           <Link href="/en">
             <Image
-              src="/American_Flag.jpg"
-              alt="american flag"
+              src="/english flag.png"
+              alt="english flag"
               width={30}
               height={30}
             ></Image>

@@ -25,13 +25,13 @@ const Footer = () => {
         <div className="-mx-4 flex flex-wrap justify-center">
           <LinkGroup header="">
             <Image
-              className="flex ml-9 items-center justify-center"
-              src="/FRESH BETON INDONESIA copy.png"
+              className="flex pr-8 items-center justify-center"
+              src="/FRESH BETON INDONESIA - white.png"
               alt="logo"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
             />
-            <p className="text-white w-44">fresh beton indonesia</p>
+            {/* <p className="text-white w-44">fresh beton indonesia</p> */}
           </LinkGroup>
           <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
             <div className="mb-10 w-full">

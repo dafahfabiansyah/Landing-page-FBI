@@ -23,16 +23,7 @@ const Card = ({ article }: { article: (typeof ArticleData)[number] }) => {
 
   return (
     <section className="bg-white w-96 h-[400px] relative">
-      {/* <Image
-        src={article.image}
-        alt={article.title}
-        layout="fill"
-        sizes="(100vw, 100vh)"
-        quality={100}
-        objectFit="cover"
-        className="w-full f h-96 transition duration-500 rounded-md cursor-pointer"
-        onClick={navigateToDetail}
-      /> */}
+   
       <Image
         src={article.image}
         alt={article.title}

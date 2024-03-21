@@ -16,7 +16,7 @@ const ProductSection = () => {
         produk kami
       </h1>
       <div className="flex justify-center">
-        <div className="flex justify-between lg:flex-row flex-wrap gap-4">
+        <div className="flex justify-between gap-10 lg:flex-row flex-wrap">
           <div className="flex flex-col items-center">
             <a href="product">
               <Image
@@ -32,7 +32,7 @@ const ProductSection = () => {
               <Image
                 src={pumpImage}
                 alt="concrete pump"
-                className="w-40 transition-all hover:scale-110 h-40 object-cover"
+                className="w-40 pt-9 transition-all hover:scale-110 h-40 object-cover"
               />
               <p className="text-center mt-2 capitalize">concrete pump</p>
             </a>
@@ -52,7 +52,7 @@ const ProductSection = () => {
               <Image
                 src={mobilebatch}
                 alt="batching plant"
-                className="w-32 transition-all hover:scale-110 h-32 mt-4 object-cover"
+                className="w-32 transition-all hover:scale-110 h-32 mb-2 mt-4 object-cover"
               />
               <p className="text-center mt-6 capitalize">batching plant</p>
             </a>
@@ -62,7 +62,7 @@ const ProductSection = () => {
               <Image
                 src={concreteImage}
                 alt="mobile batching plant"
-                className="w-40 transition-all hover:scale-110 h-40 object-cover"
+                className="w-40 transition-all pt-10 hover:scale-110 h-40 object-cover"
               />
               <p className="text-center mt-2 capitalize">
                 mobile batching plant
