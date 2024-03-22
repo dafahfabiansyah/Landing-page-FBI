@@ -30,12 +30,12 @@ const Partnership = () => {
           </div>
         </div>
       </div>
-      <div className="text-center flex items-center justify-center">
+      {/* <div className="text-center flex items-center justify-center">
         <p className="bg-white text-green-500 font-bold w-72 capitalize text-3xl">
           900+ Partners <br />
           <span className="text-black text-lg font-thin">Our project</span>
         </p>
-      </div>
+      </div> */}
     </section>
   );
 };

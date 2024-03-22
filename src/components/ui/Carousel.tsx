@@ -19,7 +19,7 @@ const CarouselHero = () => {
         swipeable={true}
       >
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Company Summary</h1>
               <p className=" text-xl">
@@ -32,7 +32,7 @@ const CarouselHero = () => {
           <Image src={HeroImage1} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">
                 Quality and Service
@@ -47,7 +47,7 @@ const CarouselHero = () => {
           <Image src={HeroImage2} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Our batching plant</h1>
               <p className=" text-xl">
@@ -59,7 +59,7 @@ const CarouselHero = () => {
           <Image src={HeroImage3} alt={""} className="h-[98vh]" />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-80 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Portfolio project</h1>
               <p className=" text-xl">

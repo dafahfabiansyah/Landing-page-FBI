@@ -2,7 +2,7 @@
 
 import { ArrowBendLeftUp } from "@phosphor-icons/react";
 import tokopediIcon from "../../public/tokopedia-38845.png";
-import whatsappIcon from "../../public/—Pngtree—whatsapp mobile software icon_8704828.png";
+import whatsappIcon from "../../public/wa.png";
 import Image from "next/image";
 
 // function to scroll to top

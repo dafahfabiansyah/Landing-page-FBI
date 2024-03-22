@@ -22,7 +22,7 @@ const Card = ({ location }: { location: (typeof LocationData)[number] }) => {
     >
       <div
         onClick={redirectToUrl}
-        className="cursor-pointer h-40 relative hover:z-50"
+        className="cursor-pointer h-48 relative flex items-center justify-center place-items-center hover:z-50"
       >
         <Image
           src={location.imageThumbnail}
