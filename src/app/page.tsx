@@ -15,7 +15,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Home - Fresh Beton Indonesia",
-  description: "Halaman utama Fresh Beton Indonesia",
+  description: "Home page Fresh Beton Indonesia",
   icons: {
     icon : "./icon.ico",
   }
