@@ -5,7 +5,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Testimoni - Fresh Beton Indonesia",
-  description: "Halaman testimoni Fresh Beton Indonesia",
+  description: "Disini kalian bisa lihat testimoni dari para pelanggan Fresh Beton Indonesia",
   icons: {
     icon: "./icon.ico",
   },
@@ -31,8 +31,10 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. asep <br />
-                        (Project Owner)
+                        <ul className="w-auto">
+                          <li>Bpk. Asep - Yayasan Sekolah SMA Bogor</li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -57,8 +59,12 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. Kamsir <br />
-                        (Project Manager)
+                        <ul className="w-auto">
+                          <li>
+                            Bpk. Kamsir - Rumah Makan Padang Pagi Sore Bogor
+                          </li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -86,8 +92,13 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. Dani Purwanto <br />
-                        (Project Manager).
+                        <ul className="w-auto">
+                          <li>
+                            Bpk. Dani Purwanto - Rumah Makan Padang Pagi Sore
+                            Bogor
+                          </li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -112,8 +123,14 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. Hairuddin <br />
-                        (Project Owner).
+                        {/* Bpk. Hairuddin <br />
+                        (Project Owner). */}
+                        <ul className="w-auto">
+                          <li>
+                            Bpk. Hairuddin - Hotel Wellness & Resort Bogor
+                          </li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -140,8 +157,14 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        H. Enjang Ruslan Purnama <br />
-                        (Kepala Desa)
+                        {/* H. Enjang Ruslan Purnama <br />
+                        (Kepala Desa) */}
+                        <ul className="w-auto">
+                          <li>
+                            H. Enjang Ruslan Purnama - Desa Jogjogan Cisarua
+                          </li>
+                          <li>(Kepala Desa)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -166,8 +189,12 @@ const page = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. <br />
-                        (Project Manager)
+                        {/* Bpk. <br />
+                        (Project Manager) */}
+                        <ul className="w-auto">
+                          <li>Bapak Adi - Rumah Genset Mabes Angkatan Darat</li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>

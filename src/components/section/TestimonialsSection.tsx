@@ -32,8 +32,12 @@ const TestimonialsSection = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. asep <br />
-                        (Project Owner).
+                        {/* Bpk. asep <br />
+                        (Project Owner). */}
+                        <ul className="w-auto">
+                          <li>Bpk. Asep - Yayasan Sekolah SMA Bogor</li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -62,8 +66,12 @@ const TestimonialsSection = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. Kamsir <br />
-                        (Project Manager).
+                        {/* Bpk. Kamsir <br />
+                        (Project Manager). */}
+                        <ul className="w-auto">
+                          <li>Bpk. Kamsir - Rumah Makan Padang Pagi Sore Bogor</li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -93,8 +101,12 @@ const TestimonialsSection = () => {
                     </div>
                     <div className="flex-grow pl-3">
                       <h6 className="font-bold text-sm text-gray-600">
-                        Bpk. Dani Purwanto <br />
-                        (Project Manager).
+                        {/* Bpk. Dani Purwanto <br />
+                        (Project Manager). */}
+                        <ul className="w-auto">
+                          <li>Bpk. Dani Purwanto - Rumah Makan Padang Pagi Sore Bogor</li>
+                          <li>(Project Owner)</li>
+                        </ul>
                       </h6>
                     </div>
                   </div>
@@ -122,7 +134,7 @@ const TestimonialsSection = () => {
               onClick={navigateToDetail}
               className="bg-green-500 hover:bg-green-600 transition-all text-white py-2 px-4 rounded-md focus:outline-none"
             >
-              read all
+              Read more
             </button>
           </div>
         </div>
