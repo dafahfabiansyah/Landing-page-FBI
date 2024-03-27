@@ -4,6 +4,7 @@ import React, { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GoogleMaps from "@/components/GoogleMaps";
+import { Envelope, Phone } from "@phosphor-icons/react";
 
 interface LinkGroupProps {
   children: ReactNode;
@@ -79,7 +80,7 @@ const Footer = () => {
                   />
                 </Link>
               </div>
-              <div className="">
+              {/* <div className="">
                 <button>
                   <Link
                     href="/contact"
@@ -88,7 +89,7 @@ const Footer = () => {
                     Contact
                   </Link>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
@@ -115,7 +116,34 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mb-6">
+        <div className="flex gap-4 flex-row justify-between items-center mb-6">
+          <ul className="normal-case list-none gap-4 flex flex-row">
+            <span className="text-green-700 text-center">
+              <Envelope size={32} />
+            </span>
+            {/* <p className="font-bold text-xl mb-1">Email</p> */}
+            <p className="hover:text-green-700 transition-all text-center">
+              <Link href="mailto:admin@freshbeton.com">
+                admin@freshbeton.com
+              </Link>
+            </p>
+            <li className="flex flex-row gap-4">
+              <span className="text-green-700 text-center">
+                <Phone size={32} />
+              </span>
+              {/* <p className="font-bold text-xl mb-1">contact</p> */}
+              <p className="hover:text-green-700 transition-all text-center">
+                <Link href="https://wa.me/6281574747474" target="_blank">
+                  0815 7474 7474
+                </Link>
+              </p>
+              <p className="hover:text-green-700 transition-all text-center">
+                <Link href="https://wa.me/6281575453524" target="_blank">
+                  0815 7545 3524
+                </Link>
+              </p>
+            </li>
+          </ul>
           <p className="text-base text-body-color dark:text-dark-6 capitalize">
             Copyright &copy; {getCurrentDate()} fresh beton indonesia
           </p>

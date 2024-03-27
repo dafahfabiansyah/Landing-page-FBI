@@ -33,8 +33,8 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="pt-20 sidebar px-6 h-full">
-      <div className="flex flex-row justify-between">
+    <aside className="pt-20 sidebar mx-3 px-6 h-full">
+      <div className="flex flex-row justify-between gap-48">
         <div className="search-bar flex flex-row">
           <input
             type="text"
@@ -48,7 +48,7 @@ const Sidebar = () => {
             <MagnifyingGlass size={28} />
           </button>
         </div>
-        <ul className="capitalize flex flex-row gap-4 pt-2">
+        <ul className="capitalize flex flex-row gap-4 py-2">
           {[
             "Ready Mix Concrete",
             "Concrete Pump",
@@ -58,7 +58,7 @@ const Sidebar = () => {
           ].map((category, index) => (
             <li
               key={index}
-              className="bg-gray-100 hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
+              className="bg-gray-100  hover:bg-gray-200 rounded-full px-1 hover:text-gray-700 transition-all p-1 relative"
             >
               <Link href={`/news/category/${category}`}>{category}</Link>
             </li>

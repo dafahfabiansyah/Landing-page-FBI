@@ -151,7 +151,7 @@ const AboutSection = () => {
           Frfresh Beton Readymix was established in March 2018 with the
           establishment of a permanent batching plant in neglasari, Sukabumi. In
           the same area with the Quary and Crusher{" "}
-          <span className="hover:underline hover:text-green-800">
+          <span className="hover:underline italic hover:text-green-800">
             <Link href="https://gbp-quarry.com/">PT.GBP</Link>
           </span>
           . The capacity of the installed batching plant is 60 m3/hour with a

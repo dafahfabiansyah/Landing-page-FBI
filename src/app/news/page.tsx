@@ -23,7 +23,7 @@ const Page = () => {
         <div className='pt-20 '> 
         <Sidebar />
         </div>
-        <div className='gap-4 flex flex-wrap justify-center pt-20 '>
+        <div data-aos='fade-up' className='gap-4 flex flex-wrap justify-center pt-20  pb-5'>
           {ArticleData.map(article => (
             <Card key={article.id} article={article} />
           ))}
