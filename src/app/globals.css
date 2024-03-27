@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (max-width: 768px) {
+  .mobile-image {
+    height: 50vh; /* Change this value as needed */
+  }
+}
+
 .loader {
     width: 48px;
     height: 48px;

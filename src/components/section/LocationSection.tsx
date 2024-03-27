@@ -14,8 +14,7 @@ const LocationSection = () => {
         our location
       </h1>
       <p className="text-center text-black text-lg pb-2 font-bold capitalize">
-        Our batching plant locations are available in jabodetabek and other
-        locations:
+      Batching plant locations have been made available in Jabodetabek and other locations :
       </p>
       <div className="gap-6 flex flex-wrap justify-center">
         {limitedLocationData.map((location) => (

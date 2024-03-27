@@ -36,17 +36,19 @@ const Card = ({ location }: { location: (typeof LocationData)[number] }) => {
           {location.id}
         </p>
       </div>
-      <div className="p-4 ">
-        <h1 className="capitalize text-left text-black text-xl mb-2">
+      <div className="p-4 text-center flex flex-col justify-center items-center">
+        <h1 className="capitalize  text-black text-xl mb-2">
           {location.title}
         </h1>
         {/* <p className='text-black mb-4'>{location.address}</p> */}
-        <button
+       <div>
+       <button
           onClick={navigateToDetail}
           className="bg-[#252525] hover:bg-gray-800 transition-all text-white p-1 rounded-md focus:outline-none flex justify-end items-end"
         >
           detail
         </button>
+       </div>
       </div>
     </div>
   );
