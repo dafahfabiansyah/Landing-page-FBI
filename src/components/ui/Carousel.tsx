@@ -1,3 +1,4 @@
+import React from "react";
 import HeroImage1 from "../../../public/banner 1.jpg";
 import HeroImage2 from "../../../public/BANNER 2.jpg";
 import HeroImage3 from "../../../public/banner 3.jpg";
@@ -5,28 +6,11 @@ import HeroImage4 from "../../../public/banner 4.jpg";
 import HeroImage5 from "../../../public/banner 5.jpg";
 import HeroImage6 from "../../../public/banner 6.jpg";
 import HeroImage7 from "../../../public/banner 7.jpg";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import React, { useEffect, useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 
 const CarouselHero = () => {
-  const [windowHeight, setWindowHeight] = useState(0);
-
-  useEffect(() => {
-    // Update window height when the component mounts
-    setWindowHeight(window.innerHeight);
-
-    // Update window height when it's resized
-    const handleResize = () => {
-      setWindowHeight(window.innerHeight);
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <section>
       <Carousel
@@ -38,7 +22,7 @@ const CarouselHero = () => {
         swipeable={true}
       >
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Company Summary</h1>
               <p className=" text-xl">
@@ -55,7 +39,7 @@ const CarouselHero = () => {
           />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">
                 Quality and Service
@@ -74,7 +58,7 @@ const CarouselHero = () => {
           />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">
                 Our batching plant
@@ -92,7 +76,7 @@ const CarouselHero = () => {
           />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Portfolio project</h1>
               <p className=" text-xl">
@@ -107,7 +91,7 @@ const CarouselHero = () => {
           />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Portfolio project</h1>
               <p className=" text-xl">
@@ -122,7 +106,7 @@ const CarouselHero = () => {
           />
         </div>
         <div className="relative">
-          <div className="backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
+          <div className="h-[calc(100vh - 4rem)] sm:h-[98vh] backdrop-left absolute top-0 left-0 w-64 h-full bg-white opacity-50 flex items-center justify-center">
             <div className="flex flex-col container">
               <h1 className="text-green-500 text-2xl p-4">Portfolio project</h1>
               <p className=" text-xl">
