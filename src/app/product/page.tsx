@@ -1,55 +1,109 @@
-import Header from '@/components/Header';
-import React from 'react';
-import Card from '@/components/ui/card';
-import { ProductData } from '@/data/ProductData';
-import Link from 'next/link';
-import Footer from '@/components/Footer';
-import ServicesSection from '@/components/section/ServicesSection';
-import Image from 'next/image';
-import ServicesTable from '@/components/ServicesTable';
-import { Metadata } from 'next';
+import Header from "@/components/Header";
+import React from "react";
+import Card from "@/components/ui/card";
+import { ProductData } from "@/data/ProductData";
+import Link from "next/link";
+import Footer from "@/components/Footer";
+import ServicesSection from "@/components/section/ServicesSection";
+import Image from "next/image";
+import ServicesTable from "@/components/ServicesTable";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Product - Fresh Beton Indonesia",
   description: "Halaman product Fresh Beton Indonesia",
   icons: {
-    icon : "./icon.ico",
-  }
+    icon: "./icon.ico",
+  },
 };
 const Page = () => {
   return (
     <div>
       <Header />
-      <section className='overflow-x-hidden pt-20 pb-2 flex flex-col items-center justify-items-center justify-center'>
-      <div className='w-screen my-10'>
-        <h1 className='font-bold text-center text-green-500 text-3xl capitalize'>tabel kualitas</h1>
-        <p className='capitalize text-justify mx-10 py-4'><span className='font-bold'>PT. Fresh Beton Indonesia</span> adalah perusahaan swasta nasional yang bergerak di bidang beton siap pakai. Didirikan sejak tahun 2017, kami telah dipercaya oleh kontraktor Nasional, BUMN dan kontraktor internasional karena mampu memasok 
-        beton untuk proyek-proyek strategis dengan kualitas dan pelayanan yang memuaskan.</p>
-        <article className='capitalize text-justify mx-10 pb-3'><span className='font-bold'>PT. Fresh Beton Indonesia</span> memproduksi beton siap 
-        pakai dengan spesifikasi yang tertera di bawah ini:</article>
-       <ServicesTable/>
-      </div>
-      <div className='w-screen'>
-        <h1 className='font-bold text-center text-green-500 text-3xl capitalize'>kelas mutu beton</h1>
-        <p className='capitalize text-justify mx-44 py-4'>Mutu beton K dan FC adalah dua cara untuk mengukur kuat tekan beton.
-        Kuat tekan merupakan salah satu sifat penting beton yang menunjukkan kemampuannya untuk menahan beban tekan</p>
-      </div>
-      <div className='w-screen py-8'>
-        <h1 className='font-bold mx-44 text-green-500 text-3xl capitalize'>mutu beton K:</h1>
-        <p className='capitalize text-justify mx-44 py-2'>Mutu beton K diukur dalam satuan kg/cm². 
-        Nilai mutu beton K menunjukkan kuat tekan beton dalam satuan kg/cm² yang dapat ditahan oleh beton. Contohnya, beton dengan mutu K-200 memiliki kuat tekan 200 kg/cm².
-        Mutu beton K umumnya digunakan di Indonesia untuk proyek-proyek konstruksi yang tidak memerlukan perhitungan yang detail.</p>
-      </div>
-      <div className='w-screen'>
-        <h1 className='font-bold mx-44 text-green-500 text-3xl capitalize'>mutu beton FC:</h1>
-        <p className='capitalize text-justify mx-44 py-2'>Mutu beton FC diukur dalam satuan MPa (Mega Pascal). Nilai mutu beton FC menunjukkan kuat tekan beton dalam satuan 
-        MPa yang dapat ditahan oleh beton. Contohnya, beton dengan mutu FC-20 memiliki kuat tekan 20 MPa. Mutu beton FC umumnya digunakan di Indonesia untuk proyek-proyek 
-        konstruksi yang memerlukan perhitungan yang detail dan mengikuti standar interna- sional.</p>
-      </div>
-     </section>
+      <section className=" py-6">
+        {/* header product page */}
+        <div className="absolute inset-0 h-[500px] flex items-center justify-center">
+          <Image src="/Readymix Concrete.jpg" alt="" layout="fill" objectFit="cover" />
+        </div>
+        <div className="pt-[550px] grid grid-cols-1 sm:grid-cols-2">
+          <div className="flex justify-center items-center">
+            <Image
+              width={400}
+              height={400}
+              src="/Readymix Concrete.jpg"
+              alt="Product 1"
+              className="mt-8 rounded-l-3xl"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="text-center text-xl">
+              {/* <h1 className="text-green-500 capitalize pb-2">
+                special edition left
+              </h1> */}
+            </div>
+          </div>
+          <div className="flex justify-center items-center pb-3">
+            <div className="text-center text-xl">
+              {/* <h1 className="text-green-500 capitalize pb-2">
+                special edition right
+              </h1> */}
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              width={400}
+              height={400}
+              src="/Concrete Pump.jpg"
+              alt="Product 4"
+              className=" rounded-r-3xl"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              width={400}
+              height={400}
+              src="/Precast.jpg"
+              alt="Product 1"
+              className="mt-8 rounded-l-3xl"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <div className="text-center text-xl">
+              {/* <h1 className="text-green-500 capitalize pb-2">
+                special edition left
+              </h1> */}
+            </div>
+          </div>
+          <div className="flex justify-center items-center pb-3">
+            <div className="text-center text-xl">
+              {/* <h1 className="text-green-500 capitalize pb-2">
+                special edition right
+              </h1> */}
+            </div>
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              width={400}
+              height={400}
+              src="/Batching Plant.jpg"
+              alt="Product 4"
+              className=" rounded-r-3xl"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              width={400}
+              height={400}
+              src="/Mobile Batching Plant.jpg"
+              alt="Product 1"
+              className="mt-8 rounded-l-3xl"
+            />
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );
-}
+};
 
 export default Page;

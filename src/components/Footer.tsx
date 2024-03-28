@@ -127,7 +127,7 @@ const Footer = () => {
                 admin@freshbeton.com
               </Link>
             </p>
-            <li className="flex flex-row gap-4">
+            <li className="flex flex-row gap-4 flex-wrap">
               <span className="text-green-700 text-center">
                 <Phone size={32} />
               </span>
